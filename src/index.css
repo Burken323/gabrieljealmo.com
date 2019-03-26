@@ -412,8 +412,6 @@ p, h1, h2, h3, h4, h5{
 .content{
   width: 100%;
   height: 100%;
-  background-color: white;
-  box-shadow: 2px 2px 8px black;
   display: flex;
 }
 
@@ -516,8 +514,6 @@ p, h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  box-shadow: 2px 2px 8px black;
 }
 
 .portfolioImages{
@@ -550,6 +546,7 @@ p, h2{
 
 .portfolioTag{
   border: 1px solid black;
+  background-color: lavender;
   text-decoration: none;
 }
 
@@ -570,8 +567,6 @@ p, h2{
   height: 45vh;
   width: 80%;
   margin: auto;
-  background-color: white;
-  box-shadow: 2px 2px 8px black;
 }
 
 .myInfo{
@@ -630,8 +625,6 @@ p, h2{
   align-items: center;
   margin-right: 5%;
   float: right;
-  border: 1px solid black;
-  box-shadow: 2px 2px 5px black, 4px 4px 10px;
 }
 
 .emailInfoText{
