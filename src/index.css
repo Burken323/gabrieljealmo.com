@@ -669,6 +669,7 @@ p, h2{
 }
 
 .socialMediaIcons{
+  margin-top: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
