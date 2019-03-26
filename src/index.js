@@ -2,7 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Page from './Page';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 // import * as serviceWorker from './serviceWorker';
+
+const routing = (
+    <HashRouter >
+        <div>
+            <Switch>
+                <Route exact path="/" component={Page} />
+            </Switch>
+        </div>
+    </HashRouter>
+);
 
 ReactDOM.render(<Page />, document.getElementById('root'));
 
