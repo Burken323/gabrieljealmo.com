@@ -226,15 +226,22 @@ body {
 
 @media screen and (max-width: 690px){
   .content{
-    background-color: rgba(15, 83, 26, 0.788);
+    background-color: rgba(15, 83, 26, -0) !important;
+    box-shadow: none !important;
   }
 
   .portfolio{
-    background-color: rgba(15, 83, 26, 0.788);
+    background-color: rgba(15, 83, 26, -0) !important;
+    box-shadow: none !important;
   }
 
   .info{
-    background-color: rgba(15, 83, 26, 0.788);
+    background-color: rgba(15, 83, 26, -0) !important;
+    box-shadow: none !important;
+  }
+
+  .pageContent{
+    background-color: none !important;
   }
 
   .introPicture{
@@ -253,6 +260,8 @@ body {
   .emailInfo{
     max-width: 75%;
     min-height: 85%;
+    box-shadow: none !important;
+    border: none !important;
   }
 
 }
@@ -260,15 +269,22 @@ body {
 @media screen and (max-width: 401px){
 
   .content{
-    background-color: rgba(15, 83, 26, 0.788);
+    background-color: rgba(15, 83, 26, -0) !important;
+    box-shadow: none !important;
   }
 
   .portfolio{
-    background-color: rgba(15, 83, 26, 0.788);
+    background-color: rgba(15, 83, 26, -0) !important;
+    box-shadow: none !important;
   }
 
   .info{
-    background-color: rgba(15, 83, 26, 0.788);
+    background-color: rgba(15, 83, 26, -0) !important;
+    box-shadow: none !important;
+  }
+
+  .pageContent{
+    background-color: none !important;
   }
 
   .introPicture{
@@ -284,9 +300,15 @@ body {
     min-height: 60%;
   }
 
+  #cardImg{
+    min-width: 55%;
+  }
+
   .emailInfo{
     max-width: 75%;
     min-height: 60%;
+    box-shadow: none !important;
+    border: none !important;
   }
 
   .emailInfoText {
@@ -449,7 +471,7 @@ p, h2{
   width:65%;
   margin-left: auto;
   margin-right: 2%;
-  background-color: rgb(47,79,79, 0.2);
+  background-color: rgb(148, 141, 192);
   box-shadow: 1px 1px 5px black;
   transition-duration: 1.6s;
 }
@@ -471,7 +493,7 @@ p, h2{
   height: 30%;
   width: 65%;
   margin-left: 2%;
-  background-color: rgb(47,79,79, 0.2);
+  background-color: rgb(148, 141, 192);
   box-shadow: 1px 1px 5px black;
   transition-duration: 1.6s;
 }
@@ -498,7 +520,7 @@ p, h2{
   width: 65%;
   margin-left: auto;
   margin-right: 2%;
-  background-color: rgb(47,79,79, 0.2);
+  background-color: rgb(148, 141, 192);
   box-shadow: 1px 1px 5px black;
   transition-duration: 1.6s;
 }
@@ -600,7 +622,7 @@ p, h2{
 .cardInfo{
   width: 85%;
   height: 60%;
-  background-color: rgb(119, 136, 153, 0.3);
+  background-color: rgb(148, 141, 192);
   box-shadow: 2px 2px 8px black;
   display: flex;
   justify-content: space-evenly;
