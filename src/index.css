@@ -225,6 +225,18 @@ body {
 }
 
 @media screen and (max-width: 690px){
+  .content{
+    background-color: rgba(15, 83, 26, 0.788);
+  }
+
+  .portfolio{
+    background-color: rgba(15, 83, 26, 0.788);
+  }
+
+  .info{
+    background-color: rgba(15, 83, 26, 0.788);
+  }
+
   .introPicture{
     max-width: 30%;
   }
@@ -246,6 +258,19 @@ body {
 }
 
 @media screen and (max-width: 401px){
+
+  .content{
+    background-color: rgba(15, 83, 26, 0.788);
+  }
+
+  .portfolio{
+    background-color: rgba(15, 83, 26, 0.788);
+  }
+
+  .info{
+    background-color: rgba(15, 83, 26, 0.788);
+  }
+
   .introPicture{
     max-width: 70%;
   }
