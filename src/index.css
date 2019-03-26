@@ -225,24 +225,6 @@ body {
 }
 
 @media screen and (max-width: 690px){
-  .content{
-    background-color: rgba(15, 83, 26, -0) !important;
-    box-shadow: none !important;
-  }
-
-  .portfolio{
-    background-color: rgba(15, 83, 26, -0) !important;
-    box-shadow: none !important;
-  }
-
-  .info{
-    background-color: rgba(15, 83, 26, -0) !important;
-    box-shadow: none !important;
-  }
-
-  .pageContent{
-    background-color: none !important;
-  }
 
   .introPicture{
     max-width: 30%;
@@ -267,25 +249,6 @@ body {
 }
 
 @media screen and (max-width: 401px){
-
-  .content{
-    background-color: rgba(15, 83, 26, -0) !important;
-    box-shadow: none !important;
-  }
-
-  .portfolio{
-    background-color: rgba(15, 83, 26, -0) !important;
-    box-shadow: none !important;
-  }
-
-  .info{
-    background-color: rgba(15, 83, 26, -0) !important;
-    box-shadow: none !important;
-  }
-
-  .pageContent{
-    background-color: none !important;
-  }
 
   .introPicture{
     max-width: 70%;
@@ -342,7 +305,7 @@ p, h1, h2, h3, h4, h5{
 
 .pageContent{
   margin: auto;
-  background-color: rgba(15, 83, 26, 0.788);
+  background-color: whitesmoke;
 }
 
 .introContent{
@@ -387,7 +350,7 @@ p, h1, h2, h3, h4, h5{
   height: 2.5%;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(54, 56, 33, 0.9);
+  background-color: rgb(0,0,0,0.95);
   overflow: hidden;
   box-shadow: 2px 2px 2px 2px black;
   border-top: 2px solid black;
@@ -471,7 +434,7 @@ p, h2{
   width:65%;
   margin-left: auto;
   margin-right: 2%;
-  background-color: rgb(148, 141, 192);
+  background-color: khaki;
   box-shadow: 1px 1px 5px black;
   transition-duration: 1.6s;
 }
@@ -493,7 +456,7 @@ p, h2{
   height: 30%;
   width: 65%;
   margin-left: 2%;
-  background-color: rgb(148, 141, 192);
+  background-color: khaki;
   box-shadow: 1px 1px 5px black;
   transition-duration: 1.6s;
 }
@@ -520,7 +483,7 @@ p, h2{
   width: 65%;
   margin-left: auto;
   margin-right: 2%;
-  background-color: rgb(148, 141, 192);
+  background-color: khaki;
   box-shadow: 1px 1px 5px black;
   transition-duration: 1.6s;
 }
@@ -585,7 +548,11 @@ p, h2{
   transition-duration: 1.6s;
 }
 
-.portfolioImage:hover{
+.portfolioTag{
+  border: 1px solid black;
+}
+
+.portfolioTag,img:hover{
   padding: 1%;
   width: 80%;
   height: 92%;
@@ -622,7 +589,7 @@ p, h2{
 .cardInfo{
   width: 85%;
   height: 60%;
-  background-color: rgb(148, 141, 192);
+  background-color: peachpuff;
   box-shadow: 2px 2px 8px black;
   display: flex;
   justify-content: space-evenly;
@@ -688,8 +655,8 @@ p, h2{
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgba(54, 56, 33);
-  border-top: 1px solid black;
+  background-color: antiquewhite;
+  border-top: 1px solid lightgrey;
 }
 
 .social{
