@@ -408,6 +408,10 @@ body {
     min-width: 45%;
   }
 
+  .aboutMe{
+    min-width: 100%;
+  }
+
   .logoImg {
     min-width: 15%;
   }
