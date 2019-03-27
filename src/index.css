@@ -171,6 +171,10 @@ body {
     flex-direction: column;
   }
 
+  .portfolioTag{
+    margin-top: 5%;
+  }
+
   .portfolioImages_Last{
     display: flex;
     flex-direction: column;
@@ -206,6 +210,10 @@ body {
     font-size: 50%;
   }
 
+  .portfolioTag{
+    margin-top: 5%;
+  }
+
   .emailInfo{
     max-height: 60%;
   }
@@ -234,6 +242,10 @@ body {
     min-height: 15%;
   }
 
+  .portfolioTag{
+    margin-top: 5%;
+  }
+
   .cardInfo{
     max-width: 70%;
     min-height: 70%;
@@ -248,7 +260,7 @@ body {
 
 }
 
-@media screen and (max-width: 401px){
+@media screen and (max-width: 500px){
 
   .introPicture{
     max-width: 70%;
@@ -265,6 +277,10 @@ body {
 
   #cardImg{
     min-width: 55%;
+  }
+
+  .portfolioTag{
+    margin-top: 5%;
   }
 
   .emailInfo{
@@ -305,7 +321,7 @@ p, h1, h2, h3, h4, h5{
 
 .pageContent{
   margin: auto;
-  background-color: whitesmoke;
+  background-color: #D0FEF5;
 }
 
 .introContent{
@@ -499,7 +515,7 @@ p, h2{
   margin-left: 1%;
   margin-right: 1%;
   box-shadow: 2px 2px 8px black;
-  background-color: lavender;
+  background-color: #9AE5E6;
   text-decoration: none;
 }
 
@@ -537,7 +553,7 @@ p, h2{
 .cardInfo{
   width: 85%;
   height: 60%;
-  background-color: peachpuff;
+  background-color: #D4F2DB;
   box-shadow: 2px 2px 8px black;
   display: flex;
   justify-content: space-evenly;
@@ -601,7 +617,7 @@ p, h2{
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: antiquewhite;
+  background-color: #A8F9FF;
   border-top: 1px solid lightgrey;
 }
 
