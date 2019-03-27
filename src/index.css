@@ -371,6 +371,29 @@ body {
   }
 }
 
+@media screen and (max-width: 450px) and (max-height: 450px){
+  
+  .introPicture{
+    min-width: 45%;
+  }
+
+  #introduction{
+    min-width: 60%;
+  }
+
+  #introName{
+    min-width: 40%;
+  }
+
+  #cardImg{
+    min-width: 25%;
+  }
+
+  .socialContent{
+    min-width: 35%;
+  }
+}
+
 @media (min-device-width:600px) {
 }
 
