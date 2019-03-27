@@ -13,22 +13,14 @@ export class Contact extends React.Component{
                             <img id="cardImg" src={img} alt="" />
                             <div className="myInfoText">
                                 <h3>Gabriel Jealmo</h3>
-                                <p>Tel: 072-242 83 01</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="email">
-                        <div className="emailInfo">
-                            <div className="emailInfoText">
-                                <h4 id="letterText">E-mail:</h4>
-                                <h4 id="letterText">gabrieljealmo@gmail.com</h4>
+                                <p id="tagText">Tel: 072-242 83 01</p>
+                                <p id="tagText">E-mail: gabrieljealmo.com</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <footer className="footerContent">
                     <div className="footerInfo">
-                        <h4>Made with React</h4>
                         <div className="social">
                             <SocialMedia />
                         </div>
