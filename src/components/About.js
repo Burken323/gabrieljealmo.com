@@ -9,31 +9,7 @@ export class About extends React.Component{
                     <div className="about">
                         <div className="aboutMe">
                             <div className="aboutMeText">
-                                <h2>Om Mig</h2>
-                                <p>
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                                    in culpa qui officia deserunt mollit anim id est laborum."
-                                </p>
-                            </div>
-                        </div>
-                        <div className="aboutStudies">
-                            <div className="aboutStudiesText">
-                                <h2>Mina Studier</h2>
-                                <p id="smallText">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                                    in culpa qui officia deserunt mollit anim id est laborum."
-                                </p>
-                            </div>
-                        </div>
-                        <div className="aboutWork">
-                            <div className="aboutWorkText">
-                                <h2>Mitt Arbetsliv</h2>
+                                <h2>Hej!</h2>
                                 <p>
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
