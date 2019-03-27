@@ -399,13 +399,17 @@ body {
   .introPicture {
     max-width: 95%;
   }
-  
+
   #introduction {
     min-width: 70%;
   }
 
   #introName {
     min-width: 45%;
+  }
+
+  .logoImg {
+    min-width: 15%;
   }
 
   .info{
