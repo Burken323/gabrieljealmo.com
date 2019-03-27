@@ -515,8 +515,12 @@ p, h2{
   margin-left: 1%;
   margin-right: 1%;
   box-shadow: 2px 2px 8px black;
-  background-color: #CCFFCC;
+  background-color: #333333;
   text-decoration: none;
+}
+
+#tagText{
+  color: white;
 }
 
 .portfolioImage:hover{
