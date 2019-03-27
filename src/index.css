@@ -366,7 +366,7 @@ p, h1, h2, h3, h4, h5{
   height: 2.5%;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(0,0,0,0.95);
+  background-color: #230007;
   overflow: hidden;
   box-shadow: 2px 2px 2px 2px black;
   border-top: 2px solid black;
