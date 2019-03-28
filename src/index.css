@@ -599,12 +599,13 @@ p{
   width:70%;
   margin: auto;
   background-color: #333333;
+  border-radius: .4em .4em .4em .4em;
   box-shadow: 1px 1px 5px black;
   transition-duration: 1.6s;
 }
 
 .aboutMe:hover{
-  padding: 5%;
+  padding: 1%;
 }
 
 .aboutMeText{
@@ -613,6 +614,29 @@ p{
   padding: 3%;
   text-align: center;
   margin: auto;
+}
+
+.downloadCV{
+  width: 20%;
+  height: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  background-color: #333333;
+  box-shadow: 1px 1px 2px black;
+  border-radius: .4em .4em .4em .4em;
+  transition-duration: 1.6s;
+}
+
+.downloadCV:hover{
+  background-color: blueviolet;
+  padding: 1%;
+}
+
+#downloadTag{
+  text-decoration: none;
+  width: 100%;
 }
 
 .portfolioContent{
@@ -666,6 +690,7 @@ p{
   margin-left: 1%;
   margin-right: 1%;
   box-shadow: 2px 2px 8px black;
+  border-radius: .4em .4em .4em .4em;
   background-color: #333333;
   text-decoration: none;
 }

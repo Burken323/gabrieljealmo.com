@@ -18,9 +18,9 @@ export class About extends React.Component{
                             </div>
                         </div>
                         <div className="downloadCV">
-                                <a href={cv} target="_blank" rel="noopener noreferrer">
-                                    <h2>CV</h2>
-                                </a>
+                            <a id="downloadTag" href={cv} target="_blank" rel="noopener noreferrer">
+                                <h2>CV</h2>
+                            </a>
                         </div>
                     </div>
                 </div>
