@@ -6,7 +6,7 @@ export class Intro extends React.Component{
         return (
             <div className="introContent">
                 <img className="introPicture" src={IntroPicture} alt="" />
-                <h4 id="introduction">Studerande Webbutvecklare .NET CMS</h4>
+                <h4 id="introduction">Student in Webdevelopment .NET CMS</h4>
                 <h3 id="introName">Gabriel Jealmo.</h3>
             </div>
         );

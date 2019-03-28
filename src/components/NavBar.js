@@ -50,9 +50,9 @@ export class NavBar extends React.Component{
             <div id="NavBar" className="navigation">
                 <img onClick={this.handleLogoClick} className="logoImg" src={LogoImg} alt="" />
                 <div className="pageNavigation">
-                    <h4 onClick={this.handleAboutClick} id="about">Om Mig</h4>
+                    <h4 onClick={this.handleAboutClick} id="about">About Me</h4>
                     <h4 onClick={this.handlePortfolioClick} id="portfolio">Portfolio</h4>
-                    <h4 onClick={this.handleContactClick} id="contact">Kontakta Mig</h4>
+                    <h4 onClick={this.handleContactClick} id="contact">Contact Me</h4>
                 </div>
             </div>
         );
