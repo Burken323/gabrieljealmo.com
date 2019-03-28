@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/BlackJack_Game.dc1c80d4.JPG"
   },
   {
-    "revision": "43c5b5d0a084ebf84e08",
+    "revision": "0d5824825cae1bd8e8be",
     "url": "/static/css/main.9fba0308.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "6c3958024c0dd72951c6",
-    "url": "/static/js/2.0e9229c1.chunk.js"
+    "revision": "7dcf42a83442aa1bf143",
+    "url": "/static/js/2.3d1e7023.chunk.js"
   },
   {
     "revision": "2e616202514aff4def77fb18da580697",
@@ -22,6 +22,10 @@ self.__precacheManifest = [
   {
     "revision": "bfea6e2ff70be225918c3ac45ca999e7",
     "url": "/static/media/ProfileImg_BlackAndWhite.bfea6e2f.jpg"
+  },
+  {
+    "revision": "61f3fad4f8c6491cf978a84b5869cdc8",
+    "url": "/static/media/CV_Gabriel_Jealmo.61f3fad4.pdf"
   },
   {
     "revision": "af6b2bfa318b7cf531151df1bf9c8944",
@@ -44,8 +48,8 @@ self.__precacheManifest = [
     "url": "/static/media/Designpatterns_Application.2fd5b0c3.JPG"
   },
   {
-    "revision": "43c5b5d0a084ebf84e08",
-    "url": "/static/js/main.2f07e36f.chunk.js"
+    "revision": "0d5824825cae1bd8e8be",
+    "url": "/static/js/main.19aa9055.chunk.js"
   },
   {
     "revision": "9517f4c7c61cde06c99c0bfdf2794718",
@@ -88,7 +92,7 @@ self.__precacheManifest = [
     "url": "/static/media/ProfileImg.1a3b508b.jpg"
   },
   {
-    "revision": "828bfd447fb102c56e282cfaae90c67c",
+    "revision": "79188528d12ce940f716ac0f0b6e0a06",
     "url": "/index.html"
   }
 ];
