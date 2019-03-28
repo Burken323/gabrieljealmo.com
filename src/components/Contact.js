@@ -14,7 +14,7 @@ export class Contact extends React.Component{
                             <div className="myInfoText">
                                 <h3>Gabriel Jealmo</h3>
                                 <p id="tagText">Tel: 072-242 83 01</p>
-                                <p id="tagText">E-mail: gabrieljealmo.com</p>
+                                <p id="tagText">E-mail: gabrieljealmo@gmail.com</p>
                             </div>
                         </div>
                     </div>
