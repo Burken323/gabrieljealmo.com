@@ -229,7 +229,7 @@ body {
   }
 
   .cardInfo{
-    max-width: 70%;
+    min-width: 70%;
     min-height: 70%;
   }
 
@@ -246,7 +246,7 @@ body {
   }
 
   .cardInfo{
-    max-width: 70%;
+    min-width: 70%;
     min-height: 60%;
   }
 
@@ -394,7 +394,7 @@ body {
   }
 }
 
-@media screen and (max-width: 400px) and (max-height: 1060px){
+@media screen and (max-width: 450px) and (max-height: 1060px){
 
   .introPicture {
     max-width: 95%;
@@ -439,7 +439,7 @@ body {
 
 @media screen and (max-width: 1060px) and (max-height: 600px){
   .cardInfo {
-    max-width: 70%;
+    min-width: 70%;
     min-height: 100%;
   }
 
@@ -734,12 +734,12 @@ p{
 }
 
 .cardInfo{
-  width: 60%;
+  width: 50%;
   height: 60%;
   background-color: #333333;
   box-shadow: 2px 2px 8px black;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
