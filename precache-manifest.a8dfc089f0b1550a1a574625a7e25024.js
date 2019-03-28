@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/BlackJack_Game.dc1c80d4.JPG"
   },
   {
-    "revision": "407c5a64298392eec747",
-    "url": "/static/css/main.ba291555.chunk.css"
+    "revision": "6ad10dd2b078fbe87aa8",
+    "url": "/static/css/main.4781f83e.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/static/media/Designpatterns_Application.2fd5b0c3.JPG"
   },
   {
-    "revision": "407c5a64298392eec747",
+    "revision": "6ad10dd2b078fbe87aa8",
     "url": "/static/js/main.ec841e68.chunk.js"
   },
   {
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "/static/media/Thumbnail_2.5fd3f3d6.JPG"
   },
   {
-    "revision": "2c720ca81361cc0fa5ef6a1a0aaafaea",
+    "revision": "8b1e2ff9ad093cbbe68e7c6a82021817",
     "url": "/index.html"
   }
 ];
