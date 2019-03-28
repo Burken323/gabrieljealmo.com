@@ -4,7 +4,7 @@ export class Portfolio extends React.Component{
 
 
     render(){
-        const one = require('../images/portfolio/WeatherApplication.JPG');
+        const one = require('../images/portfolio/WeatherApp_2.JPG');
         const two = require('../images/portfolio/CurrencyConverter.JPG');
         const three = require('../images/portfolio/Tomasos_Pizza.JPG');
         const four = require('../images/portfolio/BlogApplication.JPG');
