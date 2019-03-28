@@ -476,7 +476,6 @@ p, h1, h2, h3, h4, h5{
 
 .pageContent{
   margin: auto;
-  background-color: #CCFFFF;
 }
 
 .introContent{
@@ -738,7 +737,7 @@ p{
   height: 100%;
   width: 100%;
   display: grid;
-  background-color: #CCFFFF;
+  background-color: #efefef;
   border-top: 1px solid lightgrey;
 }
 
