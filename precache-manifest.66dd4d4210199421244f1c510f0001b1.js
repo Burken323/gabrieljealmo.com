@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/BlackJack_Game.dc1c80d4.JPG"
   },
   {
-    "revision": "4b2043bced62f5763464",
+    "revision": "2689465603b57e7b7de6",
     "url": "/static/css/main.6f24bbcc.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/static/media/ProfileImg_BlackAndWhite.bfea6e2f.jpg"
   },
   {
-    "revision": "1a561d8ab4cee55763e434cceb3abe25",
-    "url": "/static/media/WeatherApplication.1a561d8a.JPG"
+    "revision": "af6b2bfa318b7cf531151df1bf9c8944",
+    "url": "/static/media/WeatherApp_2.af6b2bfa.JPG"
   },
   {
     "revision": "2a13a2f7600f78089a2bd26799ebbf49",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/static/media/Designpatterns_Application.2fd5b0c3.JPG"
   },
   {
-    "revision": "4b2043bced62f5763464",
-    "url": "/static/js/main.8240244c.chunk.js"
+    "revision": "2689465603b57e7b7de6",
+    "url": "/static/js/main.2f07e36f.chunk.js"
   },
   {
     "revision": "9517f4c7c61cde06c99c0bfdf2794718",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/static/media/ProfileImg.1a3b508b.jpg"
   },
   {
-    "revision": "61ae8cd8f6f6b3ab61d8e92dd8280627",
+    "revision": "e4f0073fea6112e15c04f8d4e8d44032",
     "url": "/index.html"
   }
 ];
