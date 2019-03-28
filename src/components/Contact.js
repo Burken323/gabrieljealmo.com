@@ -4,7 +4,7 @@ import { SocialMedia } from './SocialMedia';
 export class Contact extends React.Component{
     render(){
         const img = require('../images/ProfileImg.jpg');
-        const ogimage = require('../images/Thumbnail.JPG');
+        const ogimage = require('../images/Thumbnail_2.JPG');
         return (
             <div className="contactContent">
                 <h1 id="contactLoc">Kontakta Mig</h1>
