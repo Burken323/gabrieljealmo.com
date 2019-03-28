@@ -2,17 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Page from './Page';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import * as serviceWorker from './serviceWorker';
 
 const routing = (
-    <HashRouter >
+    <BrowserRouter >
         <div>
             <Switch>
                 <Route exact path="/" component={Page} />
             </Switch>
         </div>
-    </HashRouter>
+    </BrowserRouter>
 );
 
 ReactDOM.render(routing, document.getElementById('root'));
