@@ -412,6 +412,10 @@ body {
     min-width: 100%;
   }
 
+  .downloadCV{
+    min-width: 40%;
+  }
+
   .logoImg {
     min-width: 15%;
   }
@@ -601,7 +605,7 @@ p{
   background-color: #333333;
   border-radius: .4em .4em .4em .4em;
   box-shadow: 1px 1px 5px black;
-  transition-duration: 1.6s;
+  transition-duration: 0.6s;
 }
 
 .aboutMe:hover{
@@ -626,7 +630,7 @@ p{
   background-color: #333333;
   box-shadow: 1px 1px 2px black;
   border-radius: .4em .4em .4em .4em;
-  transition-duration: 1.6s;
+  transition-duration: 0.6s;
 }
 
 .downloadCV:hover{
@@ -682,7 +686,7 @@ p{
   margin-left: 1%;
   margin-right: 1%;
   border: 1px solid black;
-  transition-duration: 1.6s;
+  transition-duration: 0.6s;
 }
 
 .portfolioTag{
