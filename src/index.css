@@ -493,6 +493,29 @@ body {
   }
 }
 
+@media screen and (max-width: 1024px) and (max-height: 1366){
+  .sticky {
+    min-height: 10%;
+  }
+
+  .pageNavigation{
+    font-size: x-large;
+  }
+
+  .cardInfo{
+    min-height: 45%;
+  }
+  
+  .socialContent {
+    min-width: 55%;
+  }
+
+  .introPicture {
+    max-width: 50%;
+    min-width: 75%;
+  }
+}
+
 @media (min-device-width:600px) {
 }
 
