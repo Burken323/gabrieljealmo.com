@@ -495,7 +495,7 @@ body {
 
 @media screen and (max-width: 1060px) and (max-height: 1400){
   .sticky {
-    min-height: 10%;
+    max-height: 10%;
   }
 
   .pageNavigation{
@@ -503,7 +503,7 @@ body {
   }
 
   .cardInfo{
-    min-height: 45%;
+    max-height: 45%;
   }
   
   .socialContent {
@@ -511,7 +511,6 @@ body {
   }
 
   .introPicture {
-    max-width: 50%;
     min-width: 75%;
   }
 }
