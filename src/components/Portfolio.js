@@ -12,7 +12,17 @@ export class Portfolio extends React.Component{
         this.props.open();
         this.setState({ gif: chosenGif, gifInfo: info });
         const portfolio = document.getElementById('portfolioLoc');
-        window.scrollTo({ top: (portfolio.offsetTop - 80), behavior: 'smooth' });
+        // Internet Explorer 6-11
+        var isIE = false || !!document.documentMode;
+
+        // Edge 20+
+        var isEdge = !isIE && !!window.StyleMedia;
+        if(isIE || isEdge){
+            window.scroll(0, (portfolio.offsetTop - 80));
+        }
+        else{
+            window.scrollTo({ top: (portfolio.offsetTop - 80), behavior: 'smooth' });
+        }
     }
 
     imageClose(){
