@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "dc1c80d42bdfb33e04b5233121dd3b03",
-    "url": "/static/media/BlackJack_Game.dc1c80d4.JPG"
+    "revision": "d5a1221ce0e5a07b36e682d91bf96020",
+    "url": "/static/media/SudokuSolver.d5a1221c.JPG"
   },
   {
-    "revision": "851e3cf70f8973bdb5bb",
-    "url": "/static/css/main.40a1c556.chunk.css"
+    "revision": "6eb4e48ba70858fa0167",
+    "url": "/static/css/main.bdb3ab0d.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "8aab90abb7798abea24f",
-    "url": "/static/js/2.af0df43b.chunk.js"
+    "revision": "0e3904028794bc9b2e21",
+    "url": "/static/js/2.ccee0b6c.chunk.js"
   },
   {
     "revision": "2e616202514aff4def77fb18da580697",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/static/media/Designpatterns_Application.2fd5b0c3.JPG"
   },
   {
-    "revision": "851e3cf70f8973bdb5bb",
-    "url": "/static/js/main.ec841e68.chunk.js"
+    "revision": "dc1c80d42bdfb33e04b5233121dd3b03",
+    "url": "/static/media/BlackJack_Game.dc1c80d4.JPG"
   },
   {
     "revision": "9517f4c7c61cde06c99c0bfdf2794718",
@@ -76,12 +76,68 @@ self.__precacheManifest = [
     "url": "/static/media/TextAdventure_Game.927297d8.JPG"
   },
   {
-    "revision": "d5a1221ce0e5a07b36e682d91bf96020",
-    "url": "/static/media/SudokuSolver.d5a1221c.JPG"
+    "revision": "6eb4e48ba70858fa0167",
+    "url": "/static/js/main.ee29f2d6.chunk.js"
   },
   {
     "revision": "ff206957c6f83994458852fdb0df43df",
     "url": "/static/media/Hangman_Game.ff206957.JPG"
+  },
+  {
+    "revision": "6602322f6705075aba818dfd7b5d4499",
+    "url": "/static/media/WeatherApp_GIFclip.6602322f.gif"
+  },
+  {
+    "revision": "1fb006699db0a2cdcdb11558bed754aa",
+    "url": "/static/media/CurrencyConverter_GIFclip.1fb00669.gif"
+  },
+  {
+    "revision": "399667f36b3350e35c061d9cce14f7db",
+    "url": "/static/media/Tomasos_GIFclip.399667f3.gif"
+  },
+  {
+    "revision": "b24d6bf2eb3af99c3e053aa61d79b66d",
+    "url": "/static/media/Blog_GIFclip.b24d6bf2.gif"
+  },
+  {
+    "revision": "ed94bdedb9a2341858340059a035487b",
+    "url": "/static/media/CameraApp_GIFclip.ed94bded.gif"
+  },
+  {
+    "revision": "bbfc1cfb5449e01747e526f908f61626",
+    "url": "/static/media/Blackjack_GIFclip.bbfc1cfb.gif"
+  },
+  {
+    "revision": "ac0e7b138ecbb9a5ebb8eb49c2928b33",
+    "url": "/static/media/Shotgun_GIFclip.ac0e7b13.gif"
+  },
+  {
+    "revision": "c466975ce8a41a74c484f964a68db30b",
+    "url": "/static/media/FirstWebpage_GIFclip.c466975c.gif"
+  },
+  {
+    "revision": "7238232e09948daa3c8e7cd01a206215",
+    "url": "/static/media/HotelApp_GIFclip.7238232e.gif"
+  },
+  {
+    "revision": "b663894cc8d3928939cad23d6bb63e10",
+    "url": "/static/media/CookBook_GIFclip.b663894c.gif"
+  },
+  {
+    "revision": "c87b3237d8d9fc36455f4afee705809c",
+    "url": "/static/media/BankApp_GIFclip.c87b3237.gif"
+  },
+  {
+    "revision": "e5c1e64c7ab00245cfef849c817b59cc",
+    "url": "/static/media/TextAdventure_GIFclip.e5c1e64c.gif"
+  },
+  {
+    "revision": "802005331d2a0a7609293bce82468d2b",
+    "url": "/static/media/SudokuSolver_GIFclip.80200533.gif"
+  },
+  {
+    "revision": "e236f3fa09f9a09ddaf17275dc7e0624",
+    "url": "/static/media/Hangman_GIFclip.e236f3fa.gif"
   },
   {
     "revision": "3d3fc1fc702f1cc69d00916188488b10",
@@ -96,7 +152,7 @@ self.__precacheManifest = [
     "url": "/static/media/Thumbnail_2.5fd3f3d6.JPG"
   },
   {
-    "revision": "c2da69384992c3859c97021ed76d2994",
+    "revision": "dcced728023c17941aa257a30d230d45",
     "url": "/index.html"
   }
 ];
