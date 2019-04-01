@@ -776,6 +776,7 @@ p{
 
 #tagText{
   color: white;
+  cursor: pointer;
 }
 
 .portfolioImage:hover{
