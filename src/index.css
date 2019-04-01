@@ -119,6 +119,22 @@ body {
     min-height: 20%;
   }
 
+  .theater{
+    min-height: 45vh;
+  }
+
+  .box{
+    min-width: 100%;
+  }
+
+  .centerBox{
+    min-height: 25vh;
+  }
+
+  .gifText{
+    font-size: 45%;
+  }
+
   .info{
     max-height: 39vh;
     min-width: 95%;
@@ -434,6 +450,10 @@ body {
 
   .socialContent{
     min-width: 100%;
+  }
+
+  .centerBox {
+    min-height: 20vh;
   }
 }
 
@@ -871,4 +891,69 @@ p{
 .socialIcon:hover{
   opacity: 0.5;
   cursor: pointer;
+}
+
+.theater{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.centerBox{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.box{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: .4em .4em .4em .4em;
+  box-shadow: 0px 10px 50px black;
+}
+
+#chosenImg{
+  border-radius: .4em 0 0 .4em;
+  width: 60%;
+  height: 100%;
+  border-right: 1px solid black;
+}
+
+.gifInfo{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #333333;
+  border-radius: 0 .3em .3em 0;
+}
+
+.gifText{
+  margin: auto;
+  width: 90%;
+  color: white;
+}
+
+.theaterClose{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeButton{
+  cursor: pointer;
+  font-size: x-large;
+  text-shadow: 0px 10px 50px black;
+}
+
+.back-drop {
+  background-color: rgba(48, 49, 48, 0.42);
+  height: 100%;
+  position: fixed;
+  transition: all 1.3s;
+  width: 100%;
 }
