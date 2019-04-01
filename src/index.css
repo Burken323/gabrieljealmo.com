@@ -772,6 +772,7 @@ p{
   border-radius: .4em .4em .4em .4em;
   background-color: #333333;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #tagText{
