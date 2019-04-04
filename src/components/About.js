@@ -11,7 +11,7 @@ export class About extends React.Component{
                         <div className="aboutMe">
                             <div className="aboutMeText">
                                 <h2>Hi!</h2>
-                                <p id="tagText"> 
+                                <p id="nonTagText"> 
                                     My name is Gabriel Jealmo and I'm currently studying webdevelopment with a focus on .NET CMS
                                     at Nackademin. What I find most appealing about programming is the possibility that as a programmer
                                     you can always learn more and improve in so many different ways AND the problem solving never stops.

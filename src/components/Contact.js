@@ -14,8 +14,8 @@ export class Contact extends React.Component{
                             <img id="cardImg" src={img} alt="" />
                             <div className="myInfoText">
                                 <h3>Gabriel Jealmo</h3>
-                                <p id="tagText">Phone: 072-242 83 01</p>
-                                <p id="tagText">E-mail: gabrieljealmo@gmail.com</p>
+                                <p id="nonTagText">Phone: 072-242 83 01</p>
+                                <p id="nonTagText">E-mail: gabrieljealmo@gmail.com</p>
                             </div>
                         </div>
                     </div>

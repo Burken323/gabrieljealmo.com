@@ -775,6 +775,10 @@ p{
   cursor: pointer;
 }
 
+#nonTagText{
+  color: white;
+}
+
 #tagText{
   color: white;
   cursor: pointer;
