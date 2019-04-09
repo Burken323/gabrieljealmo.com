@@ -280,6 +280,62 @@ body {
 
 }
 
+@media screen and (max-width: 1060px) and (max-height: 1400){
+  .sticky {
+    max-height: 10%;
+  }
+
+  .pageNavigation{
+    font-size: x-large;
+  }
+
+  .cardInfo{
+    max-height: 45%;
+  }
+  
+  .socialContent {
+    min-width: 55%;
+  }
+
+  .introPicture {
+    min-width: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px){
+  .introPicture {
+    min-width: 80%;
+  }
+  
+  .aboutContent{
+    margin-top: 5% !important;
+  }
+}
+
+@media screen and (min-width: 1000px) and (min-height: 1300px){
+  .introPicture {
+    max-width: none !important;
+    min-width: 90%;
+  }
+
+  .aboutContent{
+    margin-top: 5% !important;
+  }
+
+  .sticky{
+    min-height: 9%;
+  }
+
+  .portfolioTag{
+    margin-bottom: 5% !important;
+  }
+
+  .cardInfo{
+    min-width: 60%;
+    max-height: 45%;
+  }
+}
+
 @media screen and (min-width: 1061px) and (max-height: 701px){
   #introduction{
     min-width: 25%;
@@ -510,62 +566,6 @@ body {
   .cardInfo {
     min-width: 75%;
     min-height: 75%;
-  }
-}
-
-@media screen and (max-width: 1060px) and (max-height: 1400){
-  .sticky {
-    max-height: 10%;
-  }
-
-  .pageNavigation{
-    font-size: x-large;
-  }
-
-  .cardInfo{
-    max-height: 45%;
-  }
-  
-  .socialContent {
-    min-width: 55%;
-  }
-
-  .introPicture {
-    min-width: 75%;
-  }
-}
-
-@media screen and (max-width: 768px) and (max-height: 1024px){
-  .introPicture {
-    min-width: 80%;
-  }
-  
-  .aboutContent{
-    margin-top: 5% !important;
-  }
-}
-
-@media screen and (max-width: 1060px) and (max-height: 1400px){
-  .introPicture {
-    max-width: none !important;
-    min-width: 90%;
-  }
-
-  .aboutContent{
-    margin-top: 5% !important;
-  }
-
-  .sticky{
-    min-height: 9%;
-  }
-
-  .portfolioTag{
-    margin-bottom: 5% !important;
-  }
-
-  .cardInfo{
-    min-width: 60%;
-    max-height: 45%;
   }
 }
 
