@@ -5,9 +5,15 @@ export class Intro extends React.Component{
         const IntroPicture = require('../images/ProfileImg_BlackAndWhite.jpg');
         return (
             <div className="introContent">
-                <img className="introPicture" src={IntroPicture} alt="" />
-                <h4 id="introduction">Student in Webdevelopment .NET CMS</h4>
-                <h3 id="introName">Gabriel Jealmo.</h3>
+                <div className="introPictureContainer">
+                    <img className="introPicture" src={IntroPicture} alt="" />
+                </div>
+                <div className="introTitle">
+                    <h4 id="introduction">Student in Webdevelopment .NET CMS</h4>
+                </div>
+                <div className="introMyName">
+                    <h3 id="introName">Gabriel Jealmo.</h3>
+                </div>
             </div>
         );
     }
