@@ -535,6 +535,40 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) and (max-height: 1024px){
+  .introPicture {
+    min-width: 80%;
+  }
+  
+  .aboutContent{
+    margin-top: 5% !important;
+  }
+}
+
+@media screen and (max-width: 1060px) and (max-height: 1400px){
+  .introPicture {
+    max-width: none !important;
+    min-width: 90%;
+  }
+
+  .aboutContent{
+    margin-top: 5% !important;
+  }
+
+  .sticky{
+    min-height: 9%;
+  }
+
+  .portfolioTag{
+    margin-bottom: 5% !important;
+  }
+
+  .cardInfo{
+    min-width: 60%;
+    max-height: 45%;
+  }
+}
+
 @media (min-device-width:600px) {
 }
 
@@ -547,6 +581,7 @@ p, h1, h2, h3, h4, h5{
   text-shadow: 2px 2px 8px black, 2px 2px 12px black;
   font-style: italic;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 100%;
 }
 
 .root{
@@ -558,7 +593,7 @@ p, h1, h2, h3, h4, h5{
 }
 
 .introContent{
-  height: 89vh;
+  height: 100vh;
   margin: auto;
   display: grid;
   text-align: center;
@@ -595,7 +630,7 @@ p, h1, h2, h3, h4, h5{
   height: 2.5%;
   display: flex;
   justify-content: space-between;
-  background-color: #330000;
+  background-color: #000;
   overflow: hidden;
   box-shadow: 2px 2px 2px 2px black;
   border-top: 2px solid black;
@@ -677,14 +712,15 @@ p{
   height: 50%;
   width:70%;
   margin: auto;
-  background-color: #333333;
+  background-color: #000;
   border-radius: .4em .4em .4em .4em;
   box-shadow: 1px 1px 5px black;
   transition-duration: 0.6s;
 }
 
 .aboutMe:hover{
-  padding: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .aboutMeText{
@@ -702,7 +738,7 @@ p{
   display: flex;
   justify-content: center;
   margin-top: 5%;
-  background-color: #333333;
+  background-color: #000;
   box-shadow: 1px 1px 2px black;
   border-radius: .4em .4em .4em .4em;
   transition-duration: 0.6s;
@@ -710,7 +746,8 @@ p{
 
 .downloadCV:hover{
   background-color: blueviolet;
-  padding: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 #downloadTag{
@@ -770,7 +807,7 @@ p{
   margin-right: 1%;
   box-shadow: 2px 2px 8px black;
   border-radius: .4em .4em .4em .4em;
-  background-color: #333333;
+  background-color: #000;
   text-decoration: none;
   cursor: pointer;
 }
@@ -785,8 +822,9 @@ p{
 }
 
 .portfolioImage:hover{
-  padding: 1%;
-  width: 80%;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 75%;
   cursor: pointer;
 }
 
@@ -817,7 +855,7 @@ p{
 .cardInfo{
   width: 50%;
   height: 60%;
-  background-color: #333333;
+  background-color: #000;
   box-shadow: 2px 2px 8px black;
   display: flex;
   justify-content: space-around;
@@ -827,7 +865,7 @@ p{
 #cardImg{
   width: 25%;
   border-radius: 60%;
-  box-shadow: 1px 1px 2px black, 1px 1px 4px black;
+  box-shadow: 0px 5px 50px white;
 }
 
 .myInfoText{
@@ -841,13 +879,14 @@ p{
 
 .footerContent{
   height: 17%;
+  display: flex;
+  justify-content: center;
 }
 
 .footerInfo{
   height: 100%;
-  width: 100%;
+  width: 90%;
   display: grid;
-  background-color: #efefef;
   border-top: 1px solid lightgrey;
 }
 
