@@ -37,10 +37,10 @@ export class NavBar extends React.Component{
         // Edge 20+
         var isEdge = !isIE && !!window.StyleMedia;
         if(isIE || isEdge){
-            window.scroll(0, (about.offsetTop - 80));
+            window.scroll(0, (about.offsetTop - 120));
         }
         else{
-            window.scrollTo({ top: (about.offsetTop - 80), behavior: 'smooth' });
+            window.scrollTo({ top: (about.offsetTop - 120), behavior: 'smooth' });
         }
     }
 
@@ -52,10 +52,10 @@ export class NavBar extends React.Component{
         // Edge 20+
         var isEdge = !isIE && !!window.StyleMedia;
         if(isIE || isEdge){
-            window.scroll(0, (portfolio.offsetTop - 80));
+            window.scroll(0, (portfolio.offsetTop - 110));
         }
         else{
-            window.scrollTo({ top: (portfolio.offsetTop - 80), behavior: 'smooth' });
+            window.scrollTo({ top: (portfolio.offsetTop - 110), behavior: 'smooth' });
         }
     }
 
