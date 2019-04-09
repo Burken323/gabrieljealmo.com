@@ -280,6 +280,12 @@ body {
 
 }
 
+@media screen and (max-width: 1800) and (max-height: 900){
+  .introPictureContainer{
+    margin-top: 5% !important;
+  }
+}
+
 @media screen and (max-width: 1060px) and (max-height: 1400){
   .sticky {
     max-height: 10%;
