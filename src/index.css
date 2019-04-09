@@ -280,7 +280,7 @@ body {
 
 }
 
-@media screen and (max-width: 1800) and (max-height: 900){
+@media screen and (min-width: 1800) and (min-height: 900){
   .introPictureContainer{
     margin-top: 5% !important;
   }
