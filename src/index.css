@@ -878,6 +878,18 @@ p{
   text-shadow: none;
 }
 
+#aboutLoc{
+  font-size: xx-large;
+}
+
+#portfolioLoc{
+  font-size: xx-large;
+}
+
+#contactLoc{
+  font-size: xx-large;
+}
+
 .footerContent{
   height: 17%;
   display: flex;
