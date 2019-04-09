@@ -286,7 +286,7 @@ body {
   }
 }
 
-@media screen and (min-width: 2400px) and (min-height: 1100px){
+@media screen and (min-width: 1700px) and (min-height: 1020px){
   .introPicture{
     min-width: 30%;
   }
