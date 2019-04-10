@@ -697,6 +697,7 @@ p, h1, h2, h3, h4, h5{
 .triangleDown{
   height: 30px;
   width: 30px;
+  opacity: 0;
   border-left: 5px solid white;
   border-bottom: 5px solid white;
   animation-name: fadeArrow;
