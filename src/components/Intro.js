@@ -14,6 +14,11 @@ export class Intro extends React.Component{
                 <div className="introMyName">
                     <h3 id="introName">Gabriel Jealmo.</h3>
                 </div>
+                <div className="directions">
+                    <div className="firstMark"></div>
+                    <div className="secondMark"></div>
+                    <div className="triangleDown"></div>
+                </div>
             </div>
         );
     }
