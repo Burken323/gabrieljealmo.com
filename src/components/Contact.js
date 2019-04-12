@@ -7,9 +7,9 @@ export class Contact extends React.Component{
         const ogimage = require('../images/Thumbnail_2.JPG');
         return (
             <div className="contactContent">
-                <h1 id="contactLoc">Contact Me</h1>
                 <div className="info">
-                    <div className="myInfo">
+                    <div id="navContact" className="myInfo">
+                        <h1 id="contactLoc">Contact Me</h1>
                         <div className="cardInfo">
                             <img id="cardImg" src={img} alt="" />
                             <div className="myInfoText">

@@ -30,7 +30,7 @@ export class NavBar extends React.Component{
     }
 
     handleAboutClick(e){
-        const about = document.getElementById('aboutLoc');
+        const about = document.getElementById('navAbout');
         // Internet Explorer 6-11
         var isIE = false || !!document.documentMode;
 
@@ -45,7 +45,7 @@ export class NavBar extends React.Component{
     }
 
     handlePortfolioClick(e){
-        const portfolio = document.getElementById('portfolioLoc');
+        const portfolio = document.getElementById('navPortfolio');
         // Internet Explorer 6-11
         var isIE = false || !!document.documentMode;
 
@@ -60,7 +60,7 @@ export class NavBar extends React.Component{
     }
 
     handleContactClick(e){
-        const contact = document.getElementById('contactLoc');
+        const contact = document.getElementById('navContact');
         // Internet Explorer 6-11
         var isIE = false || !!document.documentMode;
 

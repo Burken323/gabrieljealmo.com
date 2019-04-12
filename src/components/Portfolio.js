@@ -74,8 +74,10 @@ export class Portfolio extends React.Component{
         const HangmanGIF = require('../gifs/Hangman_GIFclip.gif');
         return (
             <div className="portfolioContent">
-                <h1 id="portfolioLoc">Portfolio</h1>
-                <h4>Different projects made with C#, Winforms, Javascript, CSS, Html, React, ASP.NET</h4>
+                <div id="navPortfolio" className="portfolioIntroText">
+                    <h1 id="portfolioLoc">Portfolio</h1>
+                    <h4>Different projects made with C#, Winforms, Javascript, CSS, Html, React, ASP.NET</h4>
+                </div>
                 { this.props.isShowing ? 
                 <div className="theater">
                     <div className="theaterClose">

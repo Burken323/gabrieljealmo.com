@@ -639,7 +639,8 @@ p, h1, h2, h3, h4, h5{
 
 @keyframes fadeArrow{
   0% {opacity: 0;}
-  100% {opacity: 0.3;}
+  50% {opacity: 0.3;}
+  100% {opacity: 0;}
 }
 
 .directions{
@@ -772,6 +773,7 @@ p, h1, h2, h3, h4, h5{
   border-top: 2px solid black;
   border-bottom: 1px solid black;
   z-index: 1;
+  opacity: 0;
 }
 
 .logoImg{
@@ -800,6 +802,7 @@ p, h1, h2, h3, h4, h5{
   height: 10%;
   top: 0;
   width: 100%;
+  opacity: 1;
 }
 
 .sticky + .aboutContent{
@@ -904,6 +907,14 @@ p{
   margin-top: 15%;
 }
 
+.portfolioIntroText{
+  width: 98%;
+  padding: 1%;
+  background-color: black;
+  transform: skewY(2deg);
+  box-shadow: 1px 1px 4px black;
+}
+
 .flexFiller{
   transform: skewY(2deg);
 }
@@ -987,11 +998,10 @@ p{
 
 .myInfo{
   margin: auto;
-  height: 75%;
-  width: 100%;
+  height: 85%;
+  width: 98%;
+  padding: 1%;
   text-align: center;
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #000;
   box-shadow: 2px 2px 8px black;
@@ -999,18 +1009,19 @@ p{
 }
 
 .cardInfo{
+  margin: auto;
   width: 50%;
-  height: 60%;
+  height: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  transform: skewY(1deg);
 }
 
 #cardImg{
   width: 25%;
   border-radius: 60%;
   box-shadow: 0px 5px 50px white;
+  transform: skewY(2deg);
 }
 
 .myInfoText{
