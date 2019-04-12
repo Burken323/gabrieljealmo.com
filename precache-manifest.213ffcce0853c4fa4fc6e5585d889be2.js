@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d5a1221ce0e5a07b36e682d91bf96020",
-    "url": "/static/media/SudokuSolver.d5a1221c.JPG"
+    "revision": "ff206957c6f83994458852fdb0df43df",
+    "url": "/static/media/Hangman_Game.ff206957.JPG"
   },
   {
-    "revision": "7da7720f01b37c2d4654",
-    "url": "/static/css/main.2e3a9f9f.chunk.css"
+    "revision": "53103c50b6ffde070cd4",
+    "url": "/static/css/main.340a279e.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -14,10 +14,6 @@ self.__precacheManifest = [
   {
     "revision": "0e3904028794bc9b2e21",
     "url": "/static/js/2.ccee0b6c.chunk.js"
-  },
-  {
-    "revision": "2e616202514aff4def77fb18da580697",
-    "url": "/static/media/Intro_BG_Filter_1.2e616202.jpg"
   },
   {
     "revision": "bfea6e2ff70be225918c3ac45ca999e7",
@@ -76,12 +72,12 @@ self.__precacheManifest = [
     "url": "/static/media/TextAdventure_Game.927297d8.JPG"
   },
   {
-    "revision": "7da7720f01b37c2d4654",
-    "url": "/static/js/main.c9ba27d0.chunk.js"
+    "revision": "d5a1221ce0e5a07b36e682d91bf96020",
+    "url": "/static/media/SudokuSolver.d5a1221c.JPG"
   },
   {
-    "revision": "ff206957c6f83994458852fdb0df43df",
-    "url": "/static/media/Hangman_Game.ff206957.JPG"
+    "revision": "53103c50b6ffde070cd4",
+    "url": "/static/js/main.3c478976.chunk.js"
   },
   {
     "revision": "6602322f6705075aba818dfd7b5d4499",
@@ -152,7 +148,7 @@ self.__precacheManifest = [
     "url": "/static/media/Thumbnail_2.5fd3f3d6.JPG"
   },
   {
-    "revision": "a706d492a21900588d16cc60f07bcdcb",
+    "revision": "db1eaf8ce1bc4345f0b489c66989b79c",
     "url": "/index.html"
   }
 ];
