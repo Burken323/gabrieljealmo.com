@@ -88,7 +88,7 @@ export class Portfolio extends React.Component{
                         <div className="box">
                             <img id="chosenImg" src={this.state.gif} alt="" />
                             <div className="gifInfo">
-                                <p className="gifText">{this.state.gifInfo}</p>
+                                <h4 className="gifText">{this.state.gifInfo}</h4>
                             </div>
                         </div>
                     </div>
