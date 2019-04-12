@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "ff206957c6f83994458852fdb0df43df",
-    "url": "/static/media/Hangman_Game.ff206957.JPG"
+    "revision": "d5a1221ce0e5a07b36e682d91bf96020",
+    "url": "/static/media/SudokuSolver.d5a1221c.JPG"
   },
   {
-    "revision": "64d7f90e95b4bdc92b85",
+    "revision": "fbd35fd85c0bfdbc88df",
     "url": "/static/css/main.340a279e.chunk.css"
   },
   {
@@ -12,12 +12,16 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "0e3904028794bc9b2e21",
-    "url": "/static/js/2.ccee0b6c.chunk.js"
+    "revision": "7b7615de4f2507232f77",
+    "url": "/static/js/2.9aa2084e.chunk.js"
   },
   {
     "revision": "bfea6e2ff70be225918c3ac45ca999e7",
     "url": "/static/media/ProfileImg_BlackAndWhite.bfea6e2f.jpg"
+  },
+  {
+    "revision": "154fd85642db3f5f60875ab7849dca83",
+    "url": "/static/media/IntroPic_3dText.154fd856.png"
   },
   {
     "revision": "61f3fad4f8c6491cf978a84b5869cdc8",
@@ -72,12 +76,12 @@ self.__precacheManifest = [
     "url": "/static/media/TextAdventure_Game.927297d8.JPG"
   },
   {
-    "revision": "d5a1221ce0e5a07b36e682d91bf96020",
-    "url": "/static/media/SudokuSolver.d5a1221c.JPG"
+    "revision": "fbd35fd85c0bfdbc88df",
+    "url": "/static/js/main.e411122c.chunk.js"
   },
   {
-    "revision": "64d7f90e95b4bdc92b85",
-    "url": "/static/js/main.a0b64eca.chunk.js"
+    "revision": "ff206957c6f83994458852fdb0df43df",
+    "url": "/static/media/Hangman_Game.ff206957.JPG"
   },
   {
     "revision": "6602322f6705075aba818dfd7b5d4499",
@@ -148,7 +152,7 @@ self.__precacheManifest = [
     "url": "/static/media/Thumbnail_2.5fd3f3d6.JPG"
   },
   {
-    "revision": "95c0c545250842ab0f8d90bc33383beb",
+    "revision": "5a3cf4f78b01b09bcb086f5bf7f7cd74",
     "url": "/index.html"
   }
 ];
