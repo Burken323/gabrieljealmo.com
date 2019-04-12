@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/SudokuSolver.d5a1221c.JPG"
   },
   {
-    "revision": "fe0a4cbb5717c44935ad",
-    "url": "/static/css/main.340a279e.chunk.css"
+    "revision": "09cd6c2f60e5d8cfaffd",
+    "url": "/static/css/main.881109f6.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/static/media/TextAdventure_Game.927297d8.JPG"
   },
   {
-    "revision": "fe0a4cbb5717c44935ad",
+    "revision": "09cd6c2f60e5d8cfaffd",
     "url": "/static/js/main.f8395f6e.chunk.js"
   },
   {
@@ -152,7 +152,7 @@ self.__precacheManifest = [
     "url": "/static/media/Thumbnail_2.5fd3f3d6.JPG"
   },
   {
-    "revision": "48e9cb46659a4a5abb592f79468d2b74",
+    "revision": "05d876642086731aa504fed24df95963",
     "url": "/index.html"
   }
 ];
