@@ -729,9 +729,6 @@ p, h1, h2, h3, h4, h5{
 .introPicture{
   height: 100%;
   margin: auto;
-  border: 2px solid white;
-  /*border-radius: 12em 12em 12em 12em;*/
-  box-shadow: 0px 0px 0px 5px black, 0px 20px 50px black;
 }
 
 .introPictureContainer{
