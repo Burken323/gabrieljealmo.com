@@ -11,17 +11,17 @@ export class Portfolio extends React.Component{
     imageView(chosenGif, info){
         this.props.open();
         this.setState({ gif: chosenGif, gifInfo: info });
-        const portfolio = document.getElementById('portfolioLoc');
+        const portfolio = document.getElementById('navPortfolio');
         // Internet Explorer 6-11
         var isIE = false || !!document.documentMode;
 
         // Edge 20+
         var isEdge = !isIE && !!window.StyleMedia;
         if(isIE || isEdge){
-            window.scroll(0, (portfolio.offsetTop - 80));
+            window.scroll(0, (portfolio.offsetTop + 80));
         }
         else{
-            window.scrollTo({ top: (portfolio.offsetTop - 80), behavior: 'smooth' });
+            window.scrollTo({ top: (portfolio.offsetTop + 80), behavior: 'smooth' });
         }
     }
 
@@ -77,10 +77,11 @@ export class Portfolio extends React.Component{
                 <div id="navPortfolio" className="portfolioIntroText">
                     <h1 id="portfolioLoc">Portfolio</h1>
                     <h4>Different projects made with C#, Winforms, Javascript, CSS, Html, React, ASP.NET</h4>
+                    <h4>Github: 'https://github.com/Burken323'</h4>
                 </div>
                 { this.props.isShowing ? 
                 <div className="theater">
-                    <div className="theaterClose">
+                    <div id="navTheather" className="theaterClose">
                         <span className="closeButton" onClick={this.imageClose}>x</span>
                     </div>
                     <div className="centerBox">
@@ -161,7 +162,6 @@ export class Portfolio extends React.Component{
                         </div>
                     </div>
                 </div>
-                <h4>Github: 'https://github.com/Burken323'</h4>
             </div>
         );
     }
