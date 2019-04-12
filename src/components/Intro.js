@@ -3,7 +3,7 @@ import React from 'react';
 export class Intro extends React.Component{
     render(){
         const IntroPicture = require('../images/ProfileImg_BlackAndWhite.jpg');
-        const testIntroPic = require('../images/IntroPic_3dText.png');
+        const testIntroPic = require('../images/IntroPic_3dText_2.png');
         return (
             <div className="introContent">
                 <div className="introPictureContainer">
