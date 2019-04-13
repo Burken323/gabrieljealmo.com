@@ -13,10 +13,6 @@ body {
     display: block;
   }
 
-  .introPicture{
-    max-height: 40%;
-  }
-
   #introduction{
     min-width: 40%;
   }
@@ -35,10 +31,6 @@ body {
     display: block;
   }
 
-  .introPicture{
-    max-height: 25%;
-  }
-
   #introduction{
     min-width: 40%;
   }
@@ -55,10 +47,6 @@ body {
 @media screen and (max-height: 380px) {
   .introContent{
     display: block;
-  }
-
-  .introPicture{
-    max-height: 15%;
   }
 
   #introduction{
@@ -81,10 +69,6 @@ body {
 
   .introContent{
     display: block;
-  }
-
-  .introPicture{
-    max-height: 40%;
   }
 
   #introduction{
@@ -165,10 +149,6 @@ body {
     display: block;
   }
 
-  .introPicture{
-    max-height: 40%;
-  }
-
   #introduction{
     min-width: 40%;
   }
@@ -242,10 +222,6 @@ body {
 }
 
 @media screen and (max-width: 690px){
-
-  .introPicture{
-    max-height: 30%;
-  }
 
   .sticky{
     min-height: 15%;
@@ -367,12 +343,6 @@ body {
     min-width: 25%;
   }
 
-}
-
-@media screen and (max-width: 1417px) and (max-height: 700px){
-  .introPicture{
-    max-height: 30%;
-  }
 }
 
 @media screen and (min-width: 1060px) and (max-height: 560px){
@@ -501,6 +471,10 @@ body {
 
   .introTitle{
     margin-top: 10% !important;
+  }
+
+  .introTextPicture{
+    max-width: 95%;
   }
 
   #introduction {
@@ -654,6 +628,14 @@ p, h1, h2, h3, h4, h5{
   vertical-align: middle;
 }
 
+.introTextPictureContainer{
+  height: 20%;
+}
+
+.introTextPicture{
+  height: 100%;
+}
+
 @keyframes fadeArrow{
   0% {opacity: 0;}
   50% {opacity: 0.3;}
@@ -724,6 +706,7 @@ p, h1, h2, h3, h4, h5{
   animation-iteration-count: infinite;
   animation-delay: 0.8s;
   transform: rotate(-45deg);
+  cursor: pointer;
 }
 
 .introPicture{
