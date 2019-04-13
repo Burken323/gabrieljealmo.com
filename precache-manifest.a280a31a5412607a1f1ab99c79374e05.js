@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/SudokuSolver.d5a1221c.JPG"
   },
   {
-    "revision": "2920cd0c5d4595ac8dc9",
-    "url": "/static/css/main.5d03539c.chunk.css"
+    "revision": "2c4501e3754e835de0ef",
+    "url": "/static/css/main.b2eb386c.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "7b7615de4f2507232f77",
-    "url": "/static/js/2.9aa2084e.chunk.js"
+    "revision": "dbc66ace093616228226",
+    "url": "/static/js/2.7f3996b7.chunk.js"
   },
   {
     "revision": "bfea6e2ff70be225918c3ac45ca999e7",
@@ -22,6 +22,10 @@ self.__precacheManifest = [
   {
     "revision": "067d029d5b1d20a4351a81f15e2533fc",
     "url": "/static/media/IntroPic_3dText_2.067d029d.png"
+  },
+  {
+    "revision": "c0baf015a3921388b5df800c938bce6b",
+    "url": "/static/media/IntroDesc_3dText_2.c0baf015.png"
   },
   {
     "revision": "61f3fad4f8c6491cf978a84b5869cdc8",
@@ -76,8 +80,8 @@ self.__precacheManifest = [
     "url": "/static/media/TextAdventure_Game.927297d8.JPG"
   },
   {
-    "revision": "2920cd0c5d4595ac8dc9",
-    "url": "/static/js/main.f8395f6e.chunk.js"
+    "revision": "2c4501e3754e835de0ef",
+    "url": "/static/js/main.d5ba7740.chunk.js"
   },
   {
     "revision": "ff206957c6f83994458852fdb0df43df",
@@ -152,7 +156,7 @@ self.__precacheManifest = [
     "url": "/static/media/Thumbnail_2.5fd3f3d6.JPG"
   },
   {
-    "revision": "8ba3d92f963dda55b4be73b125ede20d",
+    "revision": "d8bddd6f5b4313858fc71587d7ed3afe",
     "url": "/index.html"
   }
 ];
