@@ -77,7 +77,6 @@ export class Portfolio extends React.Component{
                 <div id="navPortfolio" className="portfolioIntroText">
                     <h1 id="portfolioLoc">Portfolio</h1>
                     <h4>Different projects made with C#, Winforms, Javascript, CSS, Html, React, ASP.NET</h4>
-                    <h4>Github: 'https://github.com/Burken323'</h4>
                 </div>
                 { this.props.isShowing ? 
                 <div className="theater">
