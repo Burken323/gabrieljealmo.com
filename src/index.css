@@ -1047,7 +1047,7 @@ p{
   width: 25%;
   border-radius: 60%;
   box-shadow: 0px 0px 0px 5px white;
-  transform: skewY(2deg);
+  transform: skewY(3deg);
 }
 
 .myInfoText{
