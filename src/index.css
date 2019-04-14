@@ -462,6 +462,12 @@ body {
   }
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  .introContent{
+    max-height: 96vh;
+  }
+}
+
 @media screen and (max-width: 450px) and (max-height: 1060px){
 
   .introPicture {
@@ -519,6 +525,10 @@ body {
 
   .centerBox {
     min-height: 20vh;
+  }
+
+  .box{
+    max-height: 320px;
   }
 }
 
@@ -906,13 +916,11 @@ p{
   width: 98%;
   padding: 1%;
   background-color: black;
-  transform: skewY(2deg);
   box-shadow: 1px 1px 4px black;
 }
 
 .flexFiller{
   width: 100%;
-  transform: skewY(2deg);
 }
 
 .portfolio{
@@ -1126,7 +1134,6 @@ p{
   border-bottom: 2px solid black;
   background-color: black;
   box-shadow: 0px 10px 20px black;
-  transform: skewY(2deg);
 }
 
 .box{
