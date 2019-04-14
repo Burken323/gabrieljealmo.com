@@ -1001,6 +1001,11 @@ p{
   text-align: center;
 }
 
+.contactIntroText{
+  height: 20%;
+  width: 100%;
+}
+
 .info{
   height: 45vh;
   width: 100%;
@@ -1013,11 +1018,20 @@ p{
 
 .myInfo{
   margin: auto;
-  height: 85%;
   width: 98%;
   padding: 1%;
   text-align: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card{
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 .cardInfo{

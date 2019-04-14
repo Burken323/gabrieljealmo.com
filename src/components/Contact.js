@@ -9,13 +9,16 @@ export class Contact extends React.Component{
             <div className="contactContent">
                 <div id="navContact" className="info">
                     <div className="myInfo">
-                        <h1 id="contactLoc">Contact Me</h1>
-                        <div className="cardInfo">
-                            <img id="cardImg" src={img} alt="" />
-                            <div className="myInfoText">
-                                <h4>Gabriel Jealmo</h4>
-                                <h4 id="nonTagText">Phone: 072-242 83 01</h4>
-                                <h4 id="nonTagText">E-mail: gabrieljealmo@gmail.com</h4>
+                        <div className="contactIntroText">
+                            <h1 id="contactLoc">Contact Me</h1>
+                        </div>
+                        <div className="card">
+                            <div className="cardInfo">
+                                <img id="cardImg" src={img} alt="" />
+                                <div className="myInfoText">
+                                    <h4 id="nonTagText">Phone: 072-242 83 01</h4>
+                                    <h4 id="nonTagText">E-mail: gabrieljealmo@gmail.com</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
