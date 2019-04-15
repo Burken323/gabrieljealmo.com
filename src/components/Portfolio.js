@@ -3,30 +3,43 @@ import React from 'react';
 export class Portfolio extends React.Component{
     constructor(props){
         super(props);
-        this.state = { gif: "", gifInfo: "" };
+        this.state = { gif: "", gifInfo: "" , changePosition: false };
         this.imageView = this.imageView.bind(this);
         this.imageClose = this.imageClose.bind(this);
     }
 
+    componentDidUpdate(prevProps, prevState){
+        if(prevState.changePosition !== this.state.changePosition && this.state.changePosition === true){
+            const portfolio = document.getElementById('backdrop');
+            window.scroll(0, portfolio.offsetTop);
+            let root = document.getElementById('body');
+            root.classList.add('removeScrollBar');
+            console.log('hej');
+        }
+    }
+
     imageView(chosenGif, info){
         this.props.open();
-        this.setState({ gif: chosenGif, gifInfo: info });
-        const portfolio = document.getElementById('navPortfolio');
-        // Internet Explorer 6-11
-        var isIE = false || !!document.documentMode;
+        this.setState({ gif: chosenGif, gifInfo: info, changePosition: true });
+        // const portfolio = document.getElementById('backdrop');
+        // // Internet Explorer 6-11
+        // var isIE = false || !!document.documentMode;
 
-        // Edge 20+
-        var isEdge = !isIE && !!window.StyleMedia;
-        if(isIE || isEdge){
-            window.scroll(0, (portfolio.offsetTop + 80));
-        }
-        else{
-            window.scrollTo({ top: (portfolio.offsetTop + 80), behavior: 'smooth' });
-        }
+        // // Edge 20+
+        // var isEdge = !isIE && !!window.StyleMedia;
+        // if(isIE || isEdge){
+        //     window.scroll(0, (portfolio.offsetTop));
+        // }
+        // else{
+        //     window.scrollTo({ top: (portfolio.offsetTop), behavior: 'smooth' });
+        // }
     }
 
     imageClose(){
         this.props.close();
+        let root = document.getElementById('body');
+        root.classList.remove('removeScrollBar');
+        this.setState( { changePosition: false } );
     }
 
     render(){
@@ -78,20 +91,23 @@ export class Portfolio extends React.Component{
                     <h1 id="portfolioLoc">Portfolio</h1>
                     <h4>Different projects made with C#, Winforms, Javascript, CSS, Html, React, ASP.NET</h4>
                 </div>
+                { this.props.isShowing ? <div id="backdrop" className="backdrop" onClick={this.imageClose}></div> : null }
                 { this.props.isShowing ? 
-                <div className="theater">
-                    <div id="navTheather" className="theaterClose">
-                        <span className="closeButton" onClick={this.imageClose}>x</span>
-                    </div>
-                    <div className="centerBox">
-                        <div className="box">
-                            <img id="chosenImg" src={this.state.gif} alt="" />
-                            <div className="gifInfo">
-                                <h4 className="gifText">{this.state.gifInfo}</h4>
+                    <div className="theater">
+                        { /*<div id="navTheather" className="theaterClose">
+                            <span className="closeButton" onClick={this.imageClose}>x</span>
+                        </div> */}
+                        <div className="theaterContent">
+                            <div className="centerBox">
+                                <div className="box">
+                                    <img id="chosenImg" src={this.state.gif} alt="" />
+                                    <div className="gifInfo">
+                                        <h4 className="gifText">{this.state.gifInfo}</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 : null}
                 <div className="portfolio">
                     <div className="flexFiller">

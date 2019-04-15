@@ -83,10 +83,18 @@ body {
     flex-wrap: wrap;
   }
 
+  .theaterContent{
+    max-height: 50vh;
+  }
+
+  .theater{
+    min-width: 100%;
+  }
+
   #chosenImg{
     margin: auto;
-    max-height: 70%;
-    max-width: 70%;
+    max-height: 80%;
+    max-width: 45%;
   }
 
   .gifInfo{
@@ -807,7 +815,7 @@ p, h1, h2, h3, h4, h5{
   box-shadow: 2px 2px 2px 2px black;
   border-top: 2px solid black;
   border-bottom: 1px solid black;
-  z-index: 1;
+  z-index: 4;
   opacity: 0;
 }
 
@@ -938,6 +946,9 @@ p{
   height: 22%;
   margin: auto;
   margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .portfolioIntroText{
@@ -1017,6 +1028,7 @@ p{
   position: relative;
   top: -55px;
   text-align: left;
+  z-index: 1;
   left: 12px;
   text-shadow: 1px 1px 5px black;
 }
@@ -1159,11 +1171,46 @@ p{
   cursor: pointer;
 }
 
+#copyText{
+  color: black;
+  text-shadow: none;
+}
+
+.theaterContent{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.removeScrollBar{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.backdrop{
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: black;
+  opacity: 0.5;
+  overflow: hidden;
+  overflow-y: hidden;
+  z-index: 2;
+}
+
 .theater{
+  position: absolute;
   margin: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  z-index: 3;
+  width: 85%;
+  align-self: center;
 }
 
 .centerBox{
@@ -1178,11 +1225,12 @@ p{
 }
 
 .box{
-  width: 90%;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   border: 1px solid black;
+  margin: auto;
 }
 
 #chosenImg{

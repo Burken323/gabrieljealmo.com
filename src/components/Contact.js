@@ -28,7 +28,7 @@ export class Contact extends React.Component{
                         <div className="social">
                             <SocialMedia />
                         </div>
-                        <h4>&copy; Gabriel Jealmo</h4>
+                        <h4 id="copyText">&copy; Gabriel Jealmo</h4>
                     </div>
                 </footer>
                 <img hidden src={ogimage} alt="" />
