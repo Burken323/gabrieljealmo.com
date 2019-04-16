@@ -676,6 +676,10 @@ p, h1, h2, h3, h4, h5{
 
 .introTextPictureContainer{
   height: 18%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 
 .introTextPicture{
@@ -760,11 +764,23 @@ p, h1, h2, h3, h4, h5{
   margin: auto;
 }
 
+@keyframes fadeIn{
+  0% { opacity: 0; }
+  25% { opacity: 0.25; }
+  50% { opacity: 0.5; }
+  75% { opacity: 0.75; }
+  100% { opacity: 1; }
+}
+
 .introPictureContainer{
   width: 100%;
   height: 60%;
   margin-bottom: 2%;
   margin-top: 1%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 
 .introTitle{

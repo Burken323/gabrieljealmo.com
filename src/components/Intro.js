@@ -22,7 +22,6 @@ export class Intro extends React.Component{
     }
 
     render(){
-        const IntroPicture = require('../images/ProfileImg_BlackAndWhite.jpg');
         const testIntroPic = require('../images/IntroPic_3dText_2.png');
         const testIntroTextPic = require('../images/IntroDesc_3dText_2.png');
         return (
@@ -30,14 +29,6 @@ export class Intro extends React.Component{
                 <div className="introPictureContainer">
                     <img className="introPicture" src={testIntroPic} alt="" />
                 </div>
-                {/*
-                <div className="introTitle">
-                    <h4 id="introduction">Student in Webdevelopment .NET CMS</h4>
-                </div>
-                <div className="introMyName">
-                    <h3 id="introName">Gabriel Jealmo.</h3>
-                </div>
-                */}
                 <div className="introTextPictureContainer">
                     <img className="introTextPicture" src={testIntroTextPic} alt="" />
                 </div>

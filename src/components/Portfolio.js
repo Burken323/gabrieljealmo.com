@@ -21,18 +21,6 @@ export class Portfolio extends React.Component{
     imageView(chosenGif, info){
         this.props.open();
         this.setState({ gif: chosenGif, gifInfo: info, changePosition: true });
-        // const portfolio = document.getElementById('backdrop');
-        // // Internet Explorer 6-11
-        // var isIE = false || !!document.documentMode;
-
-        // // Edge 20+
-        // var isEdge = !isIE && !!window.StyleMedia;
-        // if(isIE || isEdge){
-        //     window.scroll(0, (portfolio.offsetTop));
-        // }
-        // else{
-        //     window.scrollTo({ top: (portfolio.offsetTop), behavior: 'smooth' });
-        // }
     }
 
     imageClose(){
@@ -94,9 +82,6 @@ export class Portfolio extends React.Component{
                 { this.props.isShowing ? <div id="backdrop" className="backdrop" onClick={this.imageClose}></div> : null }
                 { this.props.isShowing ? 
                     <div className="theater">
-                        { /*<div id="navTheather" className="theaterClose">
-                            <span className="closeButton" onClick={this.imageClose}>x</span>
-                        </div> */}
                         <div className="theaterContent">
                             <div className="centerBox">
                                 <div className="box">
@@ -109,6 +94,7 @@ export class Portfolio extends React.Component{
                         </div>
                     </div>
                 : null}
+                {/* TODO: Create a slideshow for all the projects. */}
                 <div className="portfolio">
                     <div className="flexFiller">
                         <div className="portfolioImages">
