@@ -79,6 +79,38 @@ body {
     min-width: 20%;
   }
 
+  .flexFiller{
+    min-width: 90%;
+  }
+
+  .left_arrow{
+    max-width: 15px;
+    max-height: 15px;
+  }
+
+  .portfolio_text{
+    margin-top: 5% !important;
+  }
+
+  .right_arrow{
+    max-width: 15px;
+    max-height: 15px;
+  }
+
+  .slideshow_content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio_image{
+    max-height: 45%;
+    min-width: 90%;
+  }
+
+  #selectedText{
+    font-size: 50% !important;
+  }
+
   .box{
     flex-wrap: wrap;
   }
@@ -93,8 +125,6 @@ body {
 
   #chosenImg{
     margin: auto;
-    max-height: 80%;
-    max-width: 45%;
   }
 
   .gifInfo{
@@ -527,6 +557,28 @@ body {
     min-width: 45%;
   }
 
+  .portfolio_slideShowContent{
+    max-height: 50vh;
+    background-color: black;
+  }
+
+  .slideshow_content{
+    min-height: 97%;
+  }
+
+  #chosenImg{
+    margin: 0;
+  }
+
+  .centerBox{
+    min-width: 85%;
+    max-height: 60%;
+  }
+
+  .flexFiller{
+    min-width: 98%;
+  }
+
   .aboutMe{
     min-width: 100%;
   }
@@ -632,6 +684,13 @@ body {
   .cardInfo {
     min-width: 75%;
     min-height: 75%;
+  }
+}
+
+@media screen and (max-width: 1025px) and (max-height: 659px){
+  .portfolio_image {
+    max-height: 100%;
+    min-width: 90%;
   }
 }
 
@@ -975,7 +1034,133 @@ p{
 }
 
 .flexFiller{
+  width: 85%;
+  margin-top: 1%;
+  box-shadow: 2px 2px 4px black;
+}
+
+.code_logos{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.code_logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 30%;
+  padding: 5%;
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+.selected{
+  border-bottom: 2px solid white;
+}
+
+@keyframes slightFade{
+  0% {opacity: 1;}
+  50% {opacity: 0.9;}
+  100% {opacity: 0.8;}
+}
+
+.left{
+  width: 10%;
+  height: 100%;
+  display: flex;
+  background-color: black;
+  transition-duration: 0.6s;
+}
+
+.left:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.left_arrow{
+  margin: auto;
+  height: 30px;
+  width: 30px;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  transform: rotate(45deg);
+}
+
+.right{
+  width: 10%;
+  height: 100%;
+  display: flex;
+  background-color: black;
+  transition-duration: 1s;
+}
+
+.right:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.right_arrow{
+  margin: auto;
+  height: 30px;
+  width: 30px;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+  transform: rotate(-45deg);
+}
+
+.portfolio_slideShowContent{
+  height: 60vh;
+  margin: auto;
+  display: flex;
+}
+
+.slideshow{
+  width: 80%;
+  height: 100%;
+  background-color: black;
+}
+
+.slideshow_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  height: 94%;
   width: 100%;
+}
+
+.portfolio_image{
+  height: 70%;
+  width: 50%;
+  box-shadow: 0px 2px 15px darkslategrey;
+  transition-duration: 0.6s;
+}
+
+.portfolio_image:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.portfolio_text{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+#selectedImg{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#selectedText{
+  width: 90%;
 }
 
 .portfolio{
@@ -1232,7 +1417,7 @@ p{
 .centerBox{
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 85%;
   height: 100%;
   background-color: black;
   box-shadow: 0px 10px 20px black;
@@ -1247,9 +1432,8 @@ p{
 }
 
 #chosenImg{
-  width: 60%;
+  width: 100%;
   height: 100%;
-  border-right: 1px solid black;
 }
 
 .gifInfo{

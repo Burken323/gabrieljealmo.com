@@ -1,11 +1,58 @@
 import React from 'react';
+import { PortfolioProjects } from '../PortfolioModule';
+const WeatherGIF = require('../gifs/WeatherApp_GIFclip.gif');
+const CurrencyGIF = require('../gifs/CurrencyConverter_GIFclip.gif');
+let reactGifs = [WeatherGIF, CurrencyGIF];
+
+const TomasosGIF = require('../gifs/Tomasos_GIFclip.gif');
+const BlogGIF = require('../gifs/Blog_GIFclip.gif');
+let aspGifs = [TomasosGIF, BlogGIF];
+
+const BlackjackGIF = require('../gifs/Blackjack_GIFclip.gif');
+const ShotgunGIF = require('../gifs/Shotgun_GIFclip.gif');
+const FirstWebpageGIF = require('../gifs/FirstWebpage_GIFclip.gif');
+let jsHtmlCssGifs = [BlackjackGIF, ShotgunGIF, FirstWebpageGIF];
+
+const CameraGIF = require('../gifs/CameraApp_GIFclip.gif');
+const HotelGIF = require('../gifs/HotelApp_GIFclip.gif');
+const CookBookGIF = require('../gifs/CookBook_GIFclip.gif');
+const BankGIF = require('../gifs/BankApp_GIFclip.gif');
+const TextAdventureGIF = require('../gifs/TextAdventure_GIFclip.gif');
+const SudokuGIF = require('../gifs/SudokuSolver_GIFclip.gif');
+const HangmanGIF = require('../gifs/Hangman_GIFclip.gif');
+let csharpGifs = [CameraGIF, HotelGIF, CookBookGIF, BankGIF, TextAdventureGIF, SudokuGIF, HangmanGIF];
+
+let allGifs = [reactGifs, aspGifs, jsHtmlCssGifs, csharpGifs];
+
+const reactLogo = require('../images/portfolio/SlideshowCategories/ReactIntro_SmallImg.png');
+const aspNetLogo = require('../images/portfolio/SlideshowCategories/ASPNETIntro_SmallImg.png');
+const jsHtmlCssLogo = require('../images/portfolio/SlideshowCategories/JSHTMLCSSIntro_SmallImg.png');
+const csharpLogo = require('../images/portfolio/SlideshowCategories/CsharpIntro_SmallImg.png');
 
 export class Portfolio extends React.Component{
     constructor(props){
         super(props);
-        this.state = { gif: "", gifInfo: "" , changePosition: false };
+        this.state = { 
+            gif: "", 
+            gifInfo: "" , 
+            changePosition: false, 
+            currentCategoryTexts: [],
+            currentCategoryPictures: [],
+            slideshowPortfolioIndex: 0,
+            slideshowCategory: 0
+        };
         this.imageView = this.imageView.bind(this);
         this.imageClose = this.imageClose.bind(this);
+    }
+
+    componentDidMount(){
+        let startUpContent = PortfolioProjects[0];
+        let startProject = startUpContent[0];
+        let startPicture = startUpContent[1];
+        this.setState({ 
+            currentCategoryTexts: startProject, 
+            currentCategoryPictures: startPicture,
+        });
     }
 
     componentDidUpdate(prevProps, prevState){
@@ -18,9 +65,67 @@ export class Portfolio extends React.Component{
         }
     }
 
-    imageView(chosenGif, info){
+    nextProject(direction){
+        let currentProjects = this.state.currentCategoryPictures;
+        let index = this.state.slideshowPortfolioIndex;
+        if(direction < 0){
+            if((index + direction) < 0){
+                index = currentProjects.length - 1;
+            }
+            else{
+                index += direction;
+            }
+        }
+        else{
+            if((index + direction) === currentProjects.length){
+                index = 0;
+            }
+            else{
+                index += direction;
+            }
+        }
+        this.setState({ slideshowPortfolioIndex: index });
+    }
+
+    categoryClick(choice){
+        let selected = PortfolioProjects[choice];
+        let selectedTexts = selected[0];
+        let selectedPictures = selected[1];
+        var allCategories = document.getElementsByClassName('code_logo');
+        for(var i = 0; i < allCategories.length; i++){
+            allCategories[i].classList.remove('selected');
+        }
+        var chosen;
+        switch(choice){
+            case 0:
+                chosen = document.getElementById('0');
+                chosen.classList.add('selected');
+                break;
+            case 1:
+                chosen = document.getElementById('1');
+                chosen.classList.add('selected');
+                break;
+            case 2:
+                chosen = document.getElementById('2');
+                chosen.classList.add('selected');
+                break;
+            case 3:
+                chosen = document.getElementById('3');
+                chosen.classList.add('selected');
+                break;
+            default:
+                break;
+        }
+        this.setState({ currentCategoryTexts: selectedTexts, currentCategoryPictures: selectedPictures, slideshowCategory: choice, slideshowPortfolioIndex: 0 });
+    }
+
+    imageView(){
+        let index = this.state.slideshowPortfolioIndex;
+        let category = this.state.slideshowCategory;
+        let projects = allGifs[category];
+        let chosenGif = projects[index];
         this.props.open();
-        this.setState({ gif: chosenGif, gifInfo: info, changePosition: true });
+        this.setState({ gif: chosenGif, changePosition: true });
     }
 
     imageClose(){
@@ -31,48 +136,9 @@ export class Portfolio extends React.Component{
     }
 
     render(){
-        const WeatherInfo = "WeatherApplication made with React. Fetching current weather data and a forecast for today and the next 5 days to come. Option to use Geolocation exists and gets the users current location and shows the weather for that postition.";
-        const CurrencyInfo = "CurrencyConverter made with Javascript, CSS, Html. Fetches currencies from API and calculates correct conversion of two currencies.";
-        const TomasosInfo = "Webshop for a pizzeria. Made in ASP.NET with database for orders, dishes etc. Uses Core Identity for configuration and using of users.";
-        const BlogInfo = "Blog made with ASP.NET. Uses a database for storing, adding, removing blogposts and comments.";
-        const CameraInfo = "CameraSystem made in C# with 4 designpatterns implemented. Factory, Observer, IOC and Singleton.";
-        const BlackjackInfo = "Black jack game made with Javascript, CSS, Html. Has a basic login and stores previous results of the users in a database. Using node.js. (Not the database version in GIF.)";
-        const ShotgunInfo = "Shotgun game. Works kindoff like Rock, paper, scissors. Made with Javascript, CSS, Html.";
-        const FirstWebpageInfo = "My first webpage. Made with CSS and Html. Contains information about myself with PDF links to resume and personal letter.";
-        const HotelInfo = "HotelApplication made with Winforms. Handles bookings for customers and customers. Uses a database for storage. Checks invoice and datechecks.";
-        const CookBookInfo = "CookBookApplication that handles different recipes. Made with Winforms.";
-        const BankInfo = "BankApplication, has a bunch of different options for customers. Console application made in C#.";
-        const TextAdventureInfo = "TextAdventure game, basic console application made in C#. Contains different puzzle the user has to solve to beat the game.";
-        const SudokuInfo = "SudokuSolver. Console application that solves Sudokupuzzles. Made in C#.";
-        const HangmanInfo = "Hangman game, simple console application made in C#.";
-        const Weather = require('../images/portfolio/WeatherApp_2.JPG');
-        const Currency = require('../images/portfolio/CurrencyConverter.JPG');
-        const Tomasos = require('../images/portfolio/Tomasos_Pizza.JPG');
-        const Blog = require('../images/portfolio/BlogApplication.JPG');
-        const Camera = require('../images/portfolio/Designpatterns_Application.JPG');
-        const Blackjack = require('../images/portfolio/BlackJack_Game.JPG');
-        const Shotgun = require('../images/portfolio/Shotgun_Game.JPG');
-        const FirstWebpage = require('../images/portfolio/First_Webpage.JPG');
-        const Hotel = require('../images/portfolio/WinForms_HotelApp.JPG');
-        const Cookbook = require('../images/portfolio/WinForms_Cookbook.JPG');
-        const Bank = require('../images/portfolio/BankApplication.JPG');
-        const TextAdventure = require('../images/portfolio/TextAdventure_Game.JPG');
-        const Sudoku = require('../images/portfolio/SudokuSolver.JPG');
-        const Hangman = require('../images/portfolio/Hangman_Game.JPG');
-        const WeatherGIF = require('../gifs/WeatherApp_GIFclip.gif');
-        const CurrencyGIF = require('../gifs/CurrencyConverter_GIFclip.gif');
-        const TomasosGIF = require('../gifs/Tomasos_GIFclip.gif');
-        const BlogGIF = require('../gifs/Blog_GIFclip.gif');
-        const CameraGIF = require('../gifs/CameraApp_GIFclip.gif');
-        const BlackjackGIF = require('../gifs/Blackjack_GIFclip.gif');
-        const ShotgunGIF = require('../gifs/Shotgun_GIFclip.gif');
-        const FirstWebpageGIF = require('../gifs/FirstWebpage_GIFclip.gif');
-        const HotelGIF = require('../gifs/HotelApp_GIFclip.gif');
-        const CookBookGIF = require('../gifs/CookBook_GIFclip.gif');
-        const BankGIF = require('../gifs/BankApp_GIFclip.gif');
-        const TextAdventureGIF = require('../gifs/TextAdventure_GIFclip.gif');
-        const SudokuGIF = require('../gifs/SudokuSolver_GIFclip.gif');
-        const HangmanGIF = require('../gifs/Hangman_GIFclip.gif');
+        let currentPictures = this.state.currentCategoryPictures;
+        let currentTexts = this.state.currentCategoryTexts;
+        let index = this.state.slideshowPortfolioIndex;
         return (
             <div className="portfolioContent">
                 <div id="navPortfolio" className="portfolioIntroText">
@@ -86,79 +152,46 @@ export class Portfolio extends React.Component{
                             <div className="centerBox">
                                 <div className="box">
                                     <img id="chosenImg" src={this.state.gif} alt="" />
-                                    <div className="gifInfo">
-                                        <h4 className="gifText">{this.state.gifInfo}</h4>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 : null}
-                {/* TODO: Create a slideshow for all the projects. */}
                 <div className="portfolio">
                     <div className="flexFiller">
-                        <div className="portfolioImages">
-                            <div id="Weather" className="portfolioTag" onClick={() => this.imageView(WeatherGIF, WeatherInfo)}>
-                                <img className="portfolioImage" src={Weather} alt="" />
-                                <p id="tagText">WeatherApplication.</p>
+                        <div className="code_logos">
+                            <div id="0" className="code_logo selected" onClick={() => this.categoryClick(0)}>
+                                <img className="logo" src={reactLogo} alt="" />
                             </div>
-                            <div className="portfolioTag" onClick={() => this.imageView(CurrencyGIF, CurrencyInfo)}>
-                                <img className="portfolioImage" src={Currency} alt="" />
-                                <p id="tagText">CurrencyConverter.</p>
+                            <div id="1" className="code_logo" onClick={() => this.categoryClick(1)}>
+                                <img className="logo" src={aspNetLogo} alt="" />
                             </div>
-                            <div className="portfolioTag" onClick={() => this.imageView(TomasosGIF, TomasosInfo)}>
-                                <img className="portfolioImage" src={Tomasos} alt="" />
-                                <p id="tagText">Pizzeria webshop.</p>
+                            <div id="2" className="code_logo" onClick={() => this.categoryClick(2)}>
+                                <img className="logo" src={jsHtmlCssLogo} alt="" />
                             </div>
-                            <div className="portfolioTag" onClick={() => this.imageView(BlogGIF, BlogInfo)}>
-                                <img className="portfolioImage" src={Blog} alt="" />
-                                <p id="tagText">Blog.</p>
+                            <div id="3" className="code_logo" onClick={() => this.categoryClick(3)}>
+                                <img className="logo" src={csharpLogo} alt="" />
                             </div>
                         </div>
-                        <div className="portfolioImages">
-                            <div className="portfolioTag" onClick={() => this.imageView(CameraGIF, CameraInfo)}>
-                                <img className="portfolioImage" src={Camera} alt="" />
-                                <p id="tagText">"Camerasystem".</p>
-                            </div>
-                            <div className="portfolioTag" onClick={() => this.imageView(BlackjackGIF, BlackjackInfo)}>
-                                <img className="portfolioImage" src={Blackjack} alt="" />
-                                <p id="tagText">Blackjack.</p>
-                            </div>
-                            <div className="portfolioTag" onClick={() => this.imageView(ShotgunGIF, ShotgunInfo)}>
-                                <img className="portfolioImage" src={Shotgun} alt="" />
-                                <p id="tagText">Shotgun game.</p>
-                            </div>
-                            <div className="portfolioTag" onClick={() => this.imageView(FirstWebpageGIF, FirstWebpageInfo)}>
-                                <img className="portfolioImage" src={FirstWebpage} alt="" />
-                                <p id="tagText">My first webpage.</p>
-                            </div>
-                        </div>
-                        <div className="portfolioImages">
-                            <div className="portfolioTag" onClick={() => this.imageView(HotelGIF, HotelInfo)}>
-                                <img className="portfolioImage" src={Hotel} alt="" />
-                                <p id="tagText">HotelApplication.</p>
-                            </div>
-                            <div className="portfolioTag" onClick={() => this.imageView(CookBookGIF, CookBookInfo)}>
-                                <img className="portfolioImage" src={Cookbook} alt="" />
-                                <p id="tagText">CookBook.</p>
-                            </div>
-                            <div className="portfolioTag" onClick={() => this.imageView(BankGIF, BankInfo)}>
-                                <img className="portfolioImage" src={Bank} alt="" />
-                                <p id="tagText">Bankapplication.</p>
-                            </div>
-                            <div className="portfolioTag" onClick={() => this.imageView(TextAdventureGIF, TextAdventureInfo)}>
-                                <img className="portfolioImage" src={TextAdventure} alt="" />
-                                <p id="tagText">Textbased game.</p>
-                            </div>
-                        </div>
-                        <div className="portfolioImages_Last">
-                            <div className="portfolioTag" onClick={() => this.imageView(SudokuGIF, SudokuInfo)}>
-                                <img className="portfolioImage" src={Sudoku} alt="" />
-                                <p id="tagText">SudokuSolver.</p>
-                            </div>
-                            <div className="portfolioTag" onClick={() => this.imageView(HangmanGIF, HangmanInfo)}>
-                                <img className="portfolioImage" src={Hangman} alt="" />
-                                <p id="tagText">Hangman.</p>
+                        <div className="portfolio_previewSlideShow">
+                            <div className="portfolio_slideShowContent">
+                                <div className="left" onClick={() => this.nextProject(-1)}>
+                                    <div className="left_arrow"></div>
+                                </div>
+                                <div className="slideshow">
+                                    <div className="slideshow_content">
+                                        <div className="portfolio_image" onClick={() => this.imageView()}>
+                                            <img id="selectedImg" src={currentPictures[index]} alt="" />
+                                        </div>
+                                        <div className="portfolio_text">
+                                            <h4 id="selectedText">{currentTexts[index]}</h4>
+                                        </div>
+                                    </div>
+                                    <p>Click on image for demo.</p>
+                                </div>
+                                <div className="right" onClick={() => this.nextProject(1)}>
+                                    <div className="right_arrow"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
