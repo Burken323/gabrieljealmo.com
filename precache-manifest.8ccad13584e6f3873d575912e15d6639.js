@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "d5a1221ce0e5a07b36e682d91bf96020",
-    "url": "/static/media/SudokuSolver.d5a1221c.JPG"
+    "revision": "95dd10cf069b9057eadab66cd260ad46",
+    "url": "/static/media/ASPNETIntro_BigImg.95dd10cf.png"
   },
   {
-    "revision": "b9359cc3ba4d70c7dee7",
-    "url": "/static/css/main.ec2d40d2.chunk.css"
+    "revision": "61fd9ca9ac110754cc66",
+    "url": "/static/css/main.64cbeefc.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "6bdb49308c60caed7e12",
-    "url": "/static/js/2.543ce772.chunk.js"
+    "revision": "493423c739f21f63a39f",
+    "url": "/static/js/2.75c0addc.chunk.js"
   },
   {
     "revision": "067d029d5b1d20a4351a81f15e2533fc",
@@ -76,12 +76,28 @@ self.__precacheManifest = [
     "url": "/static/media/TextAdventure_Game.927297d8.JPG"
   },
   {
-    "revision": "b9359cc3ba4d70c7dee7",
-    "url": "/static/js/main.7c0abfdc.chunk.js"
+    "revision": "d5a1221ce0e5a07b36e682d91bf96020",
+    "url": "/static/media/SudokuSolver.d5a1221c.JPG"
   },
   {
     "revision": "ff206957c6f83994458852fdb0df43df",
     "url": "/static/media/Hangman_Game.ff206957.JPG"
+  },
+  {
+    "revision": "25b515a947c597a43a423639f1b9a178",
+    "url": "/static/media/ReactIntro_BigImg.25b515a9.png"
+  },
+  {
+    "revision": "61fd9ca9ac110754cc66",
+    "url": "/static/js/main.72634aa5.chunk.js"
+  },
+  {
+    "revision": "5498daa88138df13ca9d30b9e82a228a",
+    "url": "/static/media/JSHTMLCSSIntro_BigImg.5498daa8.png"
+  },
+  {
+    "revision": "807d9eafc1bc07e2f2546e6baed40079",
+    "url": "/static/media/CsharpIntro_BigImg.807d9eaf.png"
   },
   {
     "revision": "6602322f6705075aba818dfd7b5d4499",
@@ -100,10 +116,6 @@ self.__precacheManifest = [
     "url": "/static/media/Blog_GIFclip.b24d6bf2.gif"
   },
   {
-    "revision": "ed94bdedb9a2341858340059a035487b",
-    "url": "/static/media/CameraApp_GIFclip.ed94bded.gif"
-  },
-  {
     "revision": "bbfc1cfb5449e01747e526f908f61626",
     "url": "/static/media/Blackjack_GIFclip.bbfc1cfb.gif"
   },
@@ -114,6 +126,10 @@ self.__precacheManifest = [
   {
     "revision": "c466975ce8a41a74c484f964a68db30b",
     "url": "/static/media/FirstWebpage_GIFclip.c466975c.gif"
+  },
+  {
+    "revision": "ed94bdedb9a2341858340059a035487b",
+    "url": "/static/media/CameraApp_GIFclip.ed94bded.gif"
   },
   {
     "revision": "7238232e09948daa3c8e7cd01a206215",
@@ -140,6 +156,14 @@ self.__precacheManifest = [
     "url": "/static/media/Hangman_GIFclip.e236f3fa.gif"
   },
   {
+    "revision": "d228c00aa77679a1401767f21ecc0a14",
+    "url": "/static/media/ReactIntro_SmallImg.d228c00a.png"
+  },
+  {
+    "revision": "29cccfb672c4740b10abf722b13accba",
+    "url": "/static/media/JSHTMLCSSIntro_SmallImg.29cccfb6.png"
+  },
+  {
     "revision": "3d3fc1fc702f1cc69d00916188488b10",
     "url": "/static/media/GitHub.3d3fc1fc.png"
   },
@@ -152,7 +176,7 @@ self.__precacheManifest = [
     "url": "/static/media/Thumbnail_2.5fd3f3d6.JPG"
   },
   {
-    "revision": "85b9113169fbc3205cee64c5efacfad1",
+    "revision": "02f4a732670141db0eee2cd61e2fbdae",
     "url": "/index.html"
   }
 ];
