@@ -56,12 +56,26 @@ export class Portfolio extends React.Component{
     }
 
     componentDidUpdate(prevProps, prevState){
+        var portfolioImg = document.getElementById('selectedImg');
         if(prevState.changePosition !== this.state.changePosition && this.state.changePosition === true){
             const portfolio = document.getElementById('backdrop');
             window.scroll(0, portfolio.offsetTop);
             let root = document.getElementById('body');
             root.classList.add('removeScrollBar');
-            console.log('hej');
+            var portfolioGif = document.getElementById('theater');
+            portfolioGif.classList.remove('renderGif');
+            void portfolioGif.offsetWidth;
+            portfolioGif.classList.add('renderGif');
+        }
+        if(prevState.slideshowPortfolioIndex !== this.state.slideshowPortfolioIndex){
+            portfolioImg.classList.remove('reRender');
+            void portfolioImg.offsetWidth;
+            portfolioImg.classList.add('reRender');
+        }
+        if(prevState.slideshowCategory !== this.state.slideshowCategory){
+            portfolioImg.classList.remove('reRender');
+            void portfolioImg.offsetWidth;
+            portfolioImg.classList.add('reRender');
         }
     }
 
@@ -147,7 +161,7 @@ export class Portfolio extends React.Component{
                 </div>
                 { this.props.isShowing ? <div id="backdrop" className="backdrop" onClick={this.imageClose}></div> : null }
                 { this.props.isShowing ? 
-                    <div className="theater">
+                    <div id="theater" className="theater">
                         <div className="theaterContent">
                             <div className="centerBox">
                                 <div className="box">
@@ -181,7 +195,7 @@ export class Portfolio extends React.Component{
                                 <div className="slideshow">
                                     <div className="slideshow_content">
                                         <div className="portfolio_image" onClick={() => this.imageView()}>
-                                            <img id="selectedImg" src={currentPictures[index]} alt="" />
+                                            <img id="selectedImg" className="reRender" src={currentPictures[index]} alt="" />
                                         </div>
                                         <div className="portfolio_text">
                                             <h4 id="selectedText">{currentTexts[index]}</h4>
