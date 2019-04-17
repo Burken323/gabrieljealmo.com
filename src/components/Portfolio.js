@@ -25,9 +25,9 @@ let csharpGifs = [CameraGIF, HotelGIF, CookBookGIF, BankGIF, TextAdventureGIF, S
 let allGifs = [reactGifs, aspGifs, jsHtmlCssGifs, csharpGifs];
 
 const reactLogo = require('../images/portfolio/SlideshowCategories/ReactIntro_SmallImg.png');
-const aspNetLogo = require('../images/portfolio/SlideshowCategories/ASPNETIntro_SmallImg.png');
-const jsHtmlCssLogo = require('../images/portfolio/SlideshowCategories/JSHTMLCSSIntro_SmallImg.png');
-const csharpLogo = require('../images/portfolio/SlideshowCategories/CsharpIntro_SmallImg.png');
+const aspNetLogo = require('../images/portfolio/SlideshowCategories/ASPNET_logo.png');
+const jsHtmlCssLogo = require('../images/portfolio/SlideshowCategories/JSHTMLCSS_logo.png');
+const csharpLogo = require('../images/portfolio/SlideshowCategories/Csharp_logo.png');
 
 export class Portfolio extends React.Component{
     constructor(props){
