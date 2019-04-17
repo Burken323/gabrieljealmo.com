@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/Hangman_Game.6f7e3588.png"
   },
   {
-    "revision": "5c888d23c03c20aaab88",
+    "revision": "5df57cc818dc9d724939",
     "url": "/static/css/main.52eaecc5.chunk.css"
   },
   {
@@ -80,8 +80,8 @@ self.__precacheManifest = [
     "url": "/static/media/SudokuSolver.d5a1221c.JPG"
   },
   {
-    "revision": "5c888d23c03c20aaab88",
-    "url": "/static/js/main.7597c68d.chunk.js"
+    "revision": "5df57cc818dc9d724939",
+    "url": "/static/js/main.5a60e3aa.chunk.js"
   },
   {
     "revision": "6602322f6705075aba818dfd7b5d4499",
@@ -144,10 +144,6 @@ self.__precacheManifest = [
     "url": "/static/media/ReactIntro_SmallImg.d228c00a.png"
   },
   {
-    "revision": "29cccfb672c4740b10abf722b13accba",
-    "url": "/static/media/JSHTMLCSSIntro_SmallImg.29cccfb6.png"
-  },
-  {
     "revision": "3d3fc1fc702f1cc69d00916188488b10",
     "url": "/static/media/GitHub.3d3fc1fc.png"
   },
@@ -160,7 +156,7 @@ self.__precacheManifest = [
     "url": "/static/media/Thumbnail_2.5fd3f3d6.JPG"
   },
   {
-    "revision": "d9dbd437b0abbc58d95fb6dfef9dd441",
+    "revision": "329bd3e8a21a574288a7a45597e27fb6",
     "url": "/index.html"
   }
 ];
