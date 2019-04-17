@@ -1374,6 +1374,7 @@ p{
   margin-right: 1%;
   image-rendering: crisp-edges;
   opacity: 0.9;
+  transition-duration: 0.6s;
 }
 
 #socialTagG{
