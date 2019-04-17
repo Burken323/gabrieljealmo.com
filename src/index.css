@@ -98,6 +98,10 @@ body {
     flex-direction: column;
   }
 
+  .portfolio_slideShowContent{
+    background-color: black;
+  }
+
   .portfolio_image{
     max-height: 45%;
     min-width: 90%;
