@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/ASPNETIntro_BigImg.95dd10cf.png"
   },
   {
-    "revision": "4d68d91800f578b379ad",
+    "revision": "1443a216a8bb74511776",
     "url": "/static/css/main.52eaecc5.chunk.css"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/CurrencyConverter.2a13a2f7.JPG"
   },
   {
-    "revision": "8b46f5c8da766c5c0a4cce077a9b2bba",
-    "url": "/static/media/Tomasos_Pizza.8b46f5c8.JPG"
+    "revision": "64a7b7d05b41a24a7e3ae6ca8472920d",
+    "url": "/static/media/Tomasos_Pizza.64a7b7d0.png"
   },
   {
     "revision": "9c069c9adbb7a364afaab1bb3b51f0f0",
@@ -88,8 +88,8 @@ self.__precacheManifest = [
     "url": "/static/media/ReactIntro_BigImg.25b515a9.png"
   },
   {
-    "revision": "4d68d91800f578b379ad",
-    "url": "/static/js/main.e59fec4e.chunk.js"
+    "revision": "1443a216a8bb74511776",
+    "url": "/static/js/main.fdbb3298.chunk.js"
   },
   {
     "revision": "5498daa88138df13ca9d30b9e82a228a",
@@ -176,7 +176,7 @@ self.__precacheManifest = [
     "url": "/static/media/Thumbnail_2.5fd3f3d6.JPG"
   },
   {
-    "revision": "3092a5b9c27e8fc8177b1bbc586b2bb4",
+    "revision": "e4dc11789469a0548508a88eba4c2b58",
     "url": "/index.html"
   }
 ];
