@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "95dd10cf069b9057eadab66cd260ad46",
-    "url": "/static/media/ASPNETIntro_BigImg.95dd10cf.png"
+    "revision": "6f7e3588b130eb66a566fea5484b4b9c",
+    "url": "/static/media/Hangman_Game.6f7e3588.png"
   },
   {
-    "revision": "1443a216a8bb74511776",
+    "revision": "54951c41ba2f28788e63",
     "url": "/static/css/main.52eaecc5.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "493423c739f21f63a39f",
-    "url": "/static/js/2.75c0addc.chunk.js"
+    "revision": "c426b406971fe8971853",
+    "url": "/static/js/2.e98c1f20.chunk.js"
   },
   {
     "revision": "067d029d5b1d20a4351a81f15e2533fc",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/static/media/Designpatterns_Application.accfb24c.png"
   },
   {
-    "revision": "dc1c80d42bdfb33e04b5233121dd3b03",
-    "url": "/static/media/BlackJack_Game.dc1c80d4.JPG"
+    "revision": "65df82aa7c8142c4d274776121834d45",
+    "url": "/static/media/BlackJack_Game.65df82aa.png"
   },
   {
     "revision": "c3dcd980e36f4f79eb7e741eb6a15cfc",
@@ -80,24 +80,8 @@ self.__precacheManifest = [
     "url": "/static/media/SudokuSolver.d5a1221c.JPG"
   },
   {
-    "revision": "6f7e3588b130eb66a566fea5484b4b9c",
-    "url": "/static/media/Hangman_Game.6f7e3588.png"
-  },
-  {
-    "revision": "25b515a947c597a43a423639f1b9a178",
-    "url": "/static/media/ReactIntro_BigImg.25b515a9.png"
-  },
-  {
-    "revision": "1443a216a8bb74511776",
-    "url": "/static/js/main.fdbb3298.chunk.js"
-  },
-  {
-    "revision": "5498daa88138df13ca9d30b9e82a228a",
-    "url": "/static/media/JSHTMLCSSIntro_BigImg.5498daa8.png"
-  },
-  {
-    "revision": "807d9eafc1bc07e2f2546e6baed40079",
-    "url": "/static/media/CsharpIntro_BigImg.807d9eaf.png"
+    "revision": "54951c41ba2f28788e63",
+    "url": "/static/js/main.c425f890.chunk.js"
   },
   {
     "revision": "6602322f6705075aba818dfd7b5d4499",
@@ -176,7 +160,7 @@ self.__precacheManifest = [
     "url": "/static/media/Thumbnail_2.5fd3f3d6.JPG"
   },
   {
-    "revision": "e4dc11789469a0548508a88eba4c2b58",
+    "revision": "5e6068a0df131378bd86b8fdfbb32688",
     "url": "/index.html"
   }
 ];
