@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/Hangman_Game.6f7e3588.png"
   },
   {
-    "revision": "5df57cc818dc9d724939",
-    "url": "/static/css/main.52eaecc5.chunk.css"
+    "revision": "7f0907c2832d95ef039c",
+    "url": "/static/css/main.76842ef1.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/static/media/SudokuSolver.d5a1221c.JPG"
   },
   {
-    "revision": "5df57cc818dc9d724939",
+    "revision": "7f0907c2832d95ef039c",
     "url": "/static/js/main.5a60e3aa.chunk.js"
   },
   {
@@ -156,7 +156,7 @@ self.__precacheManifest = [
     "url": "/static/media/Thumbnail_2.5fd3f3d6.JPG"
   },
   {
-    "revision": "329bd3e8a21a574288a7a45597e27fb6",
+    "revision": "96cd0624cfc0898d0e98668bd12b1e03",
     "url": "/index.html"
   }
 ];
