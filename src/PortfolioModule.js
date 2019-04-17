@@ -1,19 +1,19 @@
-export var PortfolioProjects = (function(){
-    const Weather = require('./images/portfolio/WeatherApp_2.png');
-    const Currency = require('./images/portfolio/CurrencyConverter.JPG');
-    const Tomasos = require('./images/portfolio/Tomasos_Pizza.png');
-    const Blog = require('./images/portfolio/BlogApplication.png');
-    const Camera = require('./images/portfolio/Designpatterns_Application.png');
-    const Blackjack = require('./images/portfolio/BlackJack_Game.png');
-    const Shotgun = require('./images/portfolio/Shotgun_Game.png');
-    const FirstWebpage = require('./images/portfolio/First_Webpage.JPG');
-    const Hotel = require('./images/portfolio/WinForms_HotelApp.JPG');
-    const Cookbook = require('./images/portfolio/WinForms_Cookbook.JPG');
-    const Bank = require('./images/portfolio/BankApplication.JPG');
-    const TextAdventure = require('./images/portfolio/TextAdventure_Game.png');
-    const Sudoku = require('./images/portfolio/SudokuSolver.JPG');
-    const Hangman = require('./images/portfolio/Hangman_Game.png');
+const Weather = require('./images/portfolio/WeatherApp_2.png');
+const Currency = require('./images/portfolio/CurrencyConverter.JPG');
+const Tomasos = require('./images/portfolio/Tomasos_Pizza.png');
+const Blog = require('./images/portfolio/BlogApplication.png');
+const Camera = require('./images/portfolio/Designpatterns_Application.png');
+const Blackjack = require('./images/portfolio/BlackJack_Game.png');
+const Shotgun = require('./images/portfolio/Shotgun_Game.png');
+const FirstWebpage = require('./images/portfolio/First_Webpage.JPG');
+const Hotel = require('./images/portfolio/WinForms_HotelApp.JPG');
+const Cookbook = require('./images/portfolio/WinForms_Cookbook.JPG');
+const Bank = require('./images/portfolio/BankApplication.JPG');
+const TextAdventure = require('./images/portfolio/TextAdventure_Game.png');
+const Sudoku = require('./images/portfolio/SudokuSolver.JPG');
+const Hangman = require('./images/portfolio/Hangman_Game.png');
 
+export var PortfolioProjects = (function(){
     const WeatherInfo = "WeatherApplication made with React. Fetching current weather data and a forecast for today and the next 5 days to come. Option to use Geolocation exists and gets the users current location and shows the weather for that postition.";
     const CurrencyInfo = "CurrencyConverter made with Javascript, CSS, Html. Fetches currencies from API and calculates correct conversion of two currencies.";
 

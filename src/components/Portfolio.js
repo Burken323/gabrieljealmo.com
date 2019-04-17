@@ -39,19 +39,22 @@ export class Portfolio extends React.Component{
             currentCategoryTexts: [],
             currentCategoryPictures: [],
             slideshowPortfolioIndex: 0,
-            slideshowCategory: 0
+            slideshowCategory: 0,
+            portfolio: []
         };
         this.imageView = this.imageView.bind(this);
         this.imageClose = this.imageClose.bind(this);
     }
 
     componentDidMount(){
+        let myPortfolio = PortfolioProjects;
         let startUpContent = PortfolioProjects[0];
         let startProject = startUpContent[0];
         let startPicture = startUpContent[1];
         this.setState({ 
             currentCategoryTexts: startProject, 
             currentCategoryPictures: startPicture,
+            portfolio: myPortfolio
         });
     }
 
@@ -102,7 +105,7 @@ export class Portfolio extends React.Component{
     }
 
     categoryClick(choice){
-        let selected = PortfolioProjects[choice];
+        let selected = this.state.portfolio[choice];
         let selectedTexts = selected[0];
         let selectedPictures = selected[1];
         var allCategories = document.getElementsByClassName('code_logo');
