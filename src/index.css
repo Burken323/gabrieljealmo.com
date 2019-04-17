@@ -79,10 +79,6 @@ body {
     min-width: 20%;
   }
 
-  .flexFiller{
-    min-width: 90%;
-  }
-
   .left_arrow{
     max-width: 15px;
     max-height: 15px;
@@ -557,6 +553,19 @@ body {
     min-width: 45%;
   }
 
+  .portfolio_image{
+    max-height: 55% !important;
+  }
+
+  .portfolio_text{
+    min-width: 80%;
+    height: 15%;
+  }
+
+  .flexFiller{
+    min-width: 100%;
+  }
+
   .portfolio_slideShowContent{
     max-height: 50vh;
     background-color: black;
@@ -573,10 +582,6 @@ body {
   .centerBox{
     min-width: 85%;
     max-height: 60%;
-  }
-
-  .flexFiller{
-    min-width: 98%;
   }
 
   .aboutMe{
@@ -1074,6 +1079,7 @@ p{
   width: 10%;
   height: 100%;
   display: flex;
+  justify-content: center;
   background-color: black;
   transition-duration: 0.6s;
 }
@@ -1084,7 +1090,7 @@ p{
 }
 
 .left_arrow{
-  margin: auto;
+  align-self: center;
   height: 30px;
   width: 30px;
   border-left: 5px solid white;
@@ -1096,6 +1102,7 @@ p{
   width: 10%;
   height: 100%;
   display: flex;
+  justify-content: center;
   background-color: black;
   transition-duration: 1s;
 }
@@ -1106,7 +1113,7 @@ p{
 }
 
 .right_arrow{
-  margin: auto;
+  align-self: center;
   height: 30px;
   width: 30px;
   border-right: 5px solid white;
