@@ -1,18 +1,18 @@
 export var PortfolioProjects = (function(){
-    const Weather = require('./images/portfolio/WeatherApp_2.JPG');
+    const Weather = require('./images/portfolio/WeatherApp_2.png');
     const Currency = require('./images/portfolio/CurrencyConverter.JPG');
     const Tomasos = require('./images/portfolio/Tomasos_Pizza.JPG');
-    const Blog = require('./images/portfolio/BlogApplication.JPG');
-    const Camera = require('./images/portfolio/Designpatterns_Application.JPG');
+    const Blog = require('./images/portfolio/BlogApplication.png');
+    const Camera = require('./images/portfolio/Designpatterns_Application.png');
     const Blackjack = require('./images/portfolio/BlackJack_Game.JPG');
-    const Shotgun = require('./images/portfolio/Shotgun_Game.JPG');
+    const Shotgun = require('./images/portfolio/Shotgun_Game.png');
     const FirstWebpage = require('./images/portfolio/First_Webpage.JPG');
     const Hotel = require('./images/portfolio/WinForms_HotelApp.JPG');
     const Cookbook = require('./images/portfolio/WinForms_Cookbook.JPG');
     const Bank = require('./images/portfolio/BankApplication.JPG');
-    const TextAdventure = require('./images/portfolio/TextAdventure_Game.JPG');
+    const TextAdventure = require('./images/portfolio/TextAdventure_Game.png');
     const Sudoku = require('./images/portfolio/SudokuSolver.JPG');
-    const Hangman = require('./images/portfolio/Hangman_Game.JPG');
+    const Hangman = require('./images/portfolio/Hangman_Game.png');
 
     const reactImg = require('./images/portfolio/SlideshowCategories/ReactIntro_BigImg.png');
     const reactIntro = "Projects made with React.";
