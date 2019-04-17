@@ -1,7 +1,7 @@
 export var PortfolioProjects = (function(){
     const Weather = require('./images/portfolio/WeatherApp_2.png');
     const Currency = require('./images/portfolio/CurrencyConverter.JPG');
-    const Tomasos = require('./images/portfolio/Tomasos_Pizza.JPG');
+    const Tomasos = require('./images/portfolio/Tomasos_Pizza.png');
     const Blog = require('./images/portfolio/BlogApplication.png');
     const Camera = require('./images/portfolio/Designpatterns_Application.png');
     const Blackjack = require('./images/portfolio/BlackJack_Game.JPG');
