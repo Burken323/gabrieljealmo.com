@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/ASPNETIntro_BigImg.95dd10cf.png"
   },
   {
-    "revision": "d4d685a3288351fd1fc1",
+    "revision": "4d68d91800f578b379ad",
     "url": "/static/css/main.52eaecc5.chunk.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/CV_Gabriel_Jealmo.61f3fad4.pdf"
   },
   {
-    "revision": "af6b2bfa318b7cf531151df1bf9c8944",
-    "url": "/static/media/WeatherApp_2.af6b2bfa.JPG"
+    "revision": "50219193603cae39136f0b15532e4f8e",
+    "url": "/static/media/WeatherApp_2.50219193.png"
   },
   {
     "revision": "2a13a2f7600f78089a2bd26799ebbf49",
@@ -40,20 +40,20 @@ self.__precacheManifest = [
     "url": "/static/media/Tomasos_Pizza.8b46f5c8.JPG"
   },
   {
-    "revision": "9f316521020b450251993f8719d2c702",
-    "url": "/static/media/BlogApplication.9f316521.JPG"
+    "revision": "9c069c9adbb7a364afaab1bb3b51f0f0",
+    "url": "/static/media/BlogApplication.9c069c9a.png"
   },
   {
-    "revision": "2fd5b0c345a2865c88405dcca71dd856",
-    "url": "/static/media/Designpatterns_Application.2fd5b0c3.JPG"
+    "revision": "accfb24cabdd713672782b0cf9054574",
+    "url": "/static/media/Designpatterns_Application.accfb24c.png"
   },
   {
     "revision": "dc1c80d42bdfb33e04b5233121dd3b03",
     "url": "/static/media/BlackJack_Game.dc1c80d4.JPG"
   },
   {
-    "revision": "9517f4c7c61cde06c99c0bfdf2794718",
-    "url": "/static/media/Shotgun_Game.9517f4c7.JPG"
+    "revision": "c3dcd980e36f4f79eb7e741eb6a15cfc",
+    "url": "/static/media/Shotgun_Game.c3dcd980.png"
   },
   {
     "revision": "42ea64895a83f9a0a03192f50d0e6749",
@@ -72,24 +72,24 @@ self.__precacheManifest = [
     "url": "/static/media/BankApplication.bbb12740.JPG"
   },
   {
-    "revision": "927297d8d9eaf7f7eebabe4d371e550b",
-    "url": "/static/media/TextAdventure_Game.927297d8.JPG"
+    "revision": "5eddfda8e91bbc0ad4d255c8414f38b1",
+    "url": "/static/media/TextAdventure_Game.5eddfda8.png"
   },
   {
     "revision": "d5a1221ce0e5a07b36e682d91bf96020",
     "url": "/static/media/SudokuSolver.d5a1221c.JPG"
   },
   {
-    "revision": "ff206957c6f83994458852fdb0df43df",
-    "url": "/static/media/Hangman_Game.ff206957.JPG"
+    "revision": "6f7e3588b130eb66a566fea5484b4b9c",
+    "url": "/static/media/Hangman_Game.6f7e3588.png"
   },
   {
     "revision": "25b515a947c597a43a423639f1b9a178",
     "url": "/static/media/ReactIntro_BigImg.25b515a9.png"
   },
   {
-    "revision": "d4d685a3288351fd1fc1",
-    "url": "/static/js/main.043d2715.chunk.js"
+    "revision": "4d68d91800f578b379ad",
+    "url": "/static/js/main.e59fec4e.chunk.js"
   },
   {
     "revision": "5498daa88138df13ca9d30b9e82a228a",
@@ -176,7 +176,7 @@ self.__precacheManifest = [
     "url": "/static/media/Thumbnail_2.5fd3f3d6.JPG"
   },
   {
-    "revision": "bfdaa71dea22257e65553ce6cdd02c3e",
+    "revision": "3092a5b9c27e8fc8177b1bbc586b2bb4",
     "url": "/index.html"
   }
 ];
