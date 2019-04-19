@@ -1144,6 +1144,22 @@ p{
   width: 100%;
 }
 
+@keyframes placeholderFade{
+  0% {opacity: 0.2;}
+  50% {opacity: 0.3;}
+  100% {opacity: 0.2;}
+}
+
+.placeholderImg{
+  width: 100%;
+  height: 100%;
+  background-color: darkslategrey;
+  animation-name: placeholderFade;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .portfolio_image{
   height: 70%;
   width: 50%;
@@ -1166,6 +1182,7 @@ p{
   width: 100%;
   height: 100%;
   display: flex;
+  transition-delay: 1s;
 }
 
 .reRender{

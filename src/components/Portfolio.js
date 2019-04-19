@@ -40,7 +40,8 @@ export class Portfolio extends React.Component{
             currentCategoryPictures: [],
             slideshowPortfolioIndex: 0,
             slideshowCategory: 0,
-            portfolio: []
+            portfolio: [],
+            loaded: false
         };
         this.imageView = this.imageView.bind(this);
         this.imageClose = this.imageClose.bind(this);
@@ -72,11 +73,13 @@ export class Portfolio extends React.Component{
         }
         if(prevState.slideshowPortfolioIndex !== this.state.slideshowPortfolioIndex){
             portfolioImg.classList.remove('reRender');
+            console.log('Render new portfolio');
             void portfolioImg.offsetWidth;
             portfolioImg.classList.add('reRender');
         }
-        if(prevState.slideshowCategory !== this.state.slideshowCategory){
+        else if(prevState.slideshowCategory !== this.state.slideshowCategory){
             portfolioImg.classList.remove('reRender');
+            console.log('Render new category');
             void portfolioImg.offsetWidth;
             portfolioImg.classList.add('reRender');
         }
@@ -152,12 +155,26 @@ export class Portfolio extends React.Component{
         this.setState( { changePosition: false } );
     }
 
+    onLoad(){
+        this.setState({ loaded: !this.state.loaded });
+    }
+
     render(){
         let currentPictures = this.state.currentCategoryPictures;
         let currentTexts = this.state.currentCategoryTexts;
         let index = this.state.slideshowPortfolioIndex;
+        let picture = currentPictures[index];
+        let preFetch = this.state.portfolio.map(function(category){
+            let links = category[1].map(function(picture){
+                return (
+                    <link rel="prefetch" href={picture} />
+                );
+            });
+            return links;
+        });
         return (
             <div className="portfolioContent">
+                {preFetch}
                 <div id="navPortfolio" className="portfolioIntroText">
                     <h1 id="portfolioLoc">Portfolio</h1>
                     <h4>Different projects made with C#, Winforms, Javascript, CSS, Html, React, ASP.NET</h4>
@@ -168,7 +185,7 @@ export class Portfolio extends React.Component{
                         <div className="theaterContent">
                             <div className="centerBox">
                                 <div className="box">
-                                    <img id="chosenImg" src={this.state.gif} alt="" />
+                                    <img id="chosenImg" src={this.state.gif} onLoad={this.onLoad.bind(this)} alt="" />
                                 </div>
                             </div>
                         </div>
@@ -198,7 +215,7 @@ export class Portfolio extends React.Component{
                                 <div className="slideshow">
                                     <div className="slideshow_content">
                                         <div className="portfolio_image" onClick={() => this.imageView()}>
-                                            <img id="selectedImg" className="reRender" src={currentPictures[index]} alt="" />
+                                            <img id="selectedImg" className="reRender" src={picture} onLoad={this.onLoad.bind(this)} alt="" />
                                         </div>
                                         <div className="portfolio_text">
                                             <h4 id="selectedText">{currentTexts[index]}</h4>
