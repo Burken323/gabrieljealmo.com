@@ -164,17 +164,26 @@ export class Portfolio extends React.Component{
         let currentTexts = this.state.currentCategoryTexts;
         let index = this.state.slideshowPortfolioIndex;
         let picture = currentPictures[index];
-        let preFetch = this.state.portfolio.map(function(category){
+        let preFetchPictures = this.state.portfolio.map(function(category){
             let links = category[1].map(function(picture){
                 return (
-                    <link rel="prefetch" href={picture} />
+                    <link key={picture} rel="prefetch" href={picture} />
+                );
+            });
+            return links;
+        });
+        let preFetchGifs = allGifs.map(function(gifs){
+            let links = gifs.map(function(gif){
+                return(
+                    <link key={gif} rel="prefetch" href={gif} />
                 );
             });
             return links;
         });
         return (
             <div className="portfolioContent">
-                {preFetch}
+                {preFetchPictures}
+                {preFetchGifs}
                 <div id="navPortfolio" className="portfolioIntroText">
                     <h1 id="portfolioLoc">Portfolio</h1>
                     <h4>Different projects made with C#, Winforms, Javascript, CSS, Html, React, ASP.NET</h4>

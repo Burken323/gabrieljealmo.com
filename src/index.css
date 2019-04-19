@@ -115,12 +115,8 @@ body {
     flex-wrap: wrap;
   }
 
-  .theaterContent{
-    max-height: 50vh;
-  }
-
   .theater{
-    min-width: 100%;
+    min-width: 90%;
   }
 
   #chosenImg{
@@ -151,15 +147,7 @@ body {
   }
 
   .theater{
-    min-height: 45vh;
-  }
-
-  .box{
-    min-width: 100%;
-  }
-
-  .centerBox{
-    min-height: 25vh;
+    max-height: 40%;
   }
 
   .gifText{
@@ -583,11 +571,6 @@ body {
     margin: 0;
   }
 
-  .centerBox{
-    min-width: 85%;
-    max-height: 60%;
-  }
-
   .aboutMe{
     min-width: 100%;
   }
@@ -615,14 +598,6 @@ body {
 
   .socialContent{
     min-width: 100%;
-  }
-
-  .centerBox {
-    min-height: 20vh;
-  }
-
-  .box{
-    max-height: 320px;
   }
 }
 
@@ -1422,7 +1397,8 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 65vh;
+  height: 100%;
+  width: 100%;
 }
 
 .removeScrollBar{
@@ -1450,14 +1426,15 @@ p{
   justify-content: center;
   flex-direction: column;
   z-index: 3;
-  width: 85%;
+  height: 65%;
+  width: 70%;
   align-self: center;
 }
 
 .centerBox{
   display: flex;
   justify-content: center;
-  width: 85%;
+  width: 100%;
   height: 100%;
   background-color: black;
   box-shadow: 0px 10px 20px black;
