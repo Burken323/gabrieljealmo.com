@@ -26,6 +26,8 @@ export class Intro extends React.Component{
         const testIntroTextPic = require('../images/IntroDesc_3dText_2.png');
         return (
             <div className="introContent">
+                <link rel="prefetch" src={testIntroPic} />
+                <link rel="prefetch" src={testIntroTextPic} />
                 <div className="introPictureContainer">
                     <img className="introPicture" src={testIntroPic} alt="" />
                 </div>

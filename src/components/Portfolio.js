@@ -86,10 +86,26 @@ export class Portfolio extends React.Component{
     }
 
     nextProject(direction){
+        let allProjects = this.state.portfolio;
         let currentProjects = this.state.currentCategoryPictures;
+        let currentTexts = this.state.currentCategoryTexts;
         let index = this.state.slideshowPortfolioIndex;
+        let catIndex = this.state.slideshowCategory;
         if(direction < 0){
-            if((index + direction) < 0){
+            if((index + direction) < 0 && catIndex === 0){
+                catIndex = allProjects.length - 1;
+                this.changeSelectedCategory(catIndex, -1);
+                let temp = allProjects[catIndex];
+                currentTexts = temp[0];
+                currentProjects = temp[1];
+                index = currentProjects.length - 1;
+            }
+            else if((index + direction) < 0 && catIndex > 0){
+                catIndex -= 1;
+                this.changeSelectedCategory(catIndex, -1);
+                let temp = allProjects[catIndex];
+                currentTexts = temp[0];
+                currentProjects = temp[1];
                 index = currentProjects.length - 1;
             }
             else{
@@ -97,14 +113,92 @@ export class Portfolio extends React.Component{
             }
         }
         else{
-            if((index + direction) === currentProjects.length){
+            if((index + direction) === currentProjects.length && (catIndex + 1) === allProjects.length){
                 index = 0;
+                catIndex = 0;
+                this.changeSelectedCategory(catIndex, 1);
+                let temp = allProjects[catIndex];
+                currentTexts = temp[0];
+                currentProjects = temp[1];
+            }
+            else if((index + direction) === currentProjects.length && catIndex < allProjects.length){
+                index = 0;
+                catIndex += 1;
+                this.changeSelectedCategory(catIndex, 1);
+                let temp = allProjects[catIndex];
+                currentTexts = temp[0];
+                currentProjects = temp[1];
             }
             else{
                 index += direction;
             }
         }
-        this.setState({ slideshowPortfolioIndex: index });
+        this.setState({ slideshowPortfolioIndex: index, currentCategoryPictures: currentProjects, slideshowCategory: catIndex, currentCategoryTexts: currentTexts });
+    }
+
+    changeSelectedCategory(index, direction){
+        var chosen;
+        var previous;
+        if(direction < 0){
+            switch(index){
+                case 0:
+                    chosen = document.getElementById('0');
+                    previous = document.getElementById('1');
+                    previous.classList.remove('selected');
+                    chosen.classList.add('selected');
+                    break;
+                case 1:
+                    chosen = document.getElementById('1');
+                    previous = document.getElementById('2');
+                    previous.classList.remove('selected');
+                    chosen.classList.add('selected');
+                    break;
+                case 2:
+                    chosen = document.getElementById('2');
+                    previous = document.getElementById('3');
+                    previous.classList.remove('selected');
+                    chosen.classList.add('selected');
+                    break;
+                case 3:
+                    chosen = document.getElementById('3');
+                    previous = document.getElementById('0');
+                    previous.classList.remove('selected');
+                    chosen.classList.add('selected');
+                    break;
+                default:
+                    break;
+            }
+        }
+        else{
+            switch(index){
+                case 0:
+                    chosen = document.getElementById('0');
+                    previous = document.getElementById('3');
+                    previous.classList.remove('selected');
+                    chosen.classList.add('selected');
+                    break;
+                case 1:
+                    chosen = document.getElementById('1');
+                    previous = document.getElementById('0');
+                    previous.classList.remove('selected');
+                    chosen.classList.add('selected');
+                    break;
+                case 2:
+                    chosen = document.getElementById('2');
+                    previous = document.getElementById('1');
+                    previous.classList.remove('selected');
+                    chosen.classList.add('selected');
+                    break;
+                case 3:
+                    chosen = document.getElementById('3');
+                    previous = document.getElementById('2');
+                    previous.classList.remove('selected');
+                    chosen.classList.add('selected');
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
     categoryClick(choice){
