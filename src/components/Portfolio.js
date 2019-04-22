@@ -78,9 +78,9 @@ export class Portfolio extends React.Component{
             curPicture.classList.remove('renderNewImg');
             console.log('Render new portfolio');
             void portfolioImg.offsetWidth;
-            if((prevState.slideshowPortfolioIndex > this.state.slideshowPortfolioIndex 
+            if(!((prevState.slideshowPortfolioIndex > this.state.slideshowPortfolioIndex 
                 && prevState.slideshowCategory === this.state.slideshowCategory)
-                || (prevState.slideshowCategory > this.state.slideshowCategory)){
+                || (prevState.slideshowCategory > this.state.slideshowCategory))){
                 portfolioImg.classList.add('reRenderNeg');
             }
             else{
