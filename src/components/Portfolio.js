@@ -60,7 +60,8 @@ export class Portfolio extends React.Component{
     }
 
     componentDidUpdate(prevProps, prevState){
-        var portfolioImg = document.getElementById('selectedImg');
+        var portfolioImg = document.getElementById('img-div');
+        var curPicture = document.getElementById('selectedImg');
         if(prevState.changePosition !== this.state.changePosition && this.state.changePosition === true){
             const portfolio = document.getElementById('backdrop');
             window.scroll(0, portfolio.offsetTop);
@@ -72,16 +73,34 @@ export class Portfolio extends React.Component{
             portfolioGif.classList.add('renderGif');
         }
         if(prevState.slideshowPortfolioIndex !== this.state.slideshowPortfolioIndex){
-            portfolioImg.classList.remove('reRender');
+            portfolioImg.classList.remove('reRenderPos');
+            portfolioImg.classList.remove('reRenderNeg');
+            curPicture.classList.remove('renderNewImg');
             console.log('Render new portfolio');
             void portfolioImg.offsetWidth;
-            portfolioImg.classList.add('reRender');
+            if((prevState.slideshowPortfolioIndex > this.state.slideshowPortfolioIndex 
+                && prevState.slideshowCategory === this.state.slideshowCategory)
+                || (prevState.slideshowCategory > this.state.slideshowCategory)){
+                portfolioImg.classList.add('reRenderNeg');
+            }
+            else{
+                portfolioImg.classList.add('reRenderPos');
+            }
+            curPicture.classList.add('renderNewImg');
         }
         else if(prevState.slideshowCategory !== this.state.slideshowCategory){
-            portfolioImg.classList.remove('reRender');
+            portfolioImg.classList.remove('reRenderPos');
+            portfolioImg.classList.remove('reRenderNeg');
+            curPicture.classList.remove('renderNewImg');
             console.log('Render new category');
             void portfolioImg.offsetWidth;
-            portfolioImg.classList.add('reRender');
+            if(prevState.slideshowCategory < this.state.slideshowCategory){
+                portfolioImg.classList.add('reRenderNeg');
+            }
+            else{
+                portfolioImg.classList.add('reRenderPos');
+            }
+            curPicture.classList.add('renderNewImg');
         }
     }
 
@@ -317,8 +336,8 @@ export class Portfolio extends React.Component{
                                 </div>
                                 <div className="slideshow">
                                     <div className="slideshow_content">
-                                        <div className="portfolio_image" onClick={() => this.imageView()}>
-                                            <img id="selectedImg" className="reRender" src={picture} onLoad={this.onLoad.bind(this)} alt="" />
+                                        <div id="img-div" className="portfolio_image reRender" onClick={() => this.imageView()}>
+                                            <img id="selectedImg" className="current_img renderNewImg" src={picture} onLoad={this.onLoad.bind(this)} alt="" />
                                         </div>
                                         <div className="portfolio_text">
                                             <h4 id="selectedText">{currentTexts[index]}</h4>
