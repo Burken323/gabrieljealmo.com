@@ -1167,12 +1167,13 @@ p{
   height: 100%;
   display: flex;
   box-shadow: -5px -5px 4px -3px black;
-  transition-duration: 0.3s;
+  transition-duration: 1s;
 }
 
 #selectedImg:hover{
-  transform: scale3d(1.02, 1.02, 10);
-  image-rendering: optimizeQuality;
+  transform: perspective(500px);
+  transform: translate3d(-4px, 6px, 50px);
+  object-fit: fill;
 }
 
 .renderNewImg{
@@ -1185,13 +1186,13 @@ p{
 @keyframes rotationYneg {
   0% { transform: rotateY(-180deg); opacity: 0; box-shadow: none; }
   50% {  }
-  100% { transform: rotateY(-360deg); opacity: 1; box-shadow: -12px -10px 0px -2px white }
+  100% { transform: rotateY(-360deg); opacity: 1; box-shadow: -12px -10px 0px -2px white; background-color: white; }
 }
 
 @keyframes rotationYpos {
   0% { transform: rotateY(180deg); opacity: 0; box-shadow: none; }
   50% {  }
-  100% { transform: rotateY(360deg); opacity: 1; box-shadow: -12px -10px 0px -2px white }
+  100% { transform: rotateY(360deg); opacity: 1; box-shadow: -12px -10px 0px -2px white; background-color: white; }
 }
 
 .reRenderNeg{
@@ -1199,7 +1200,6 @@ p{
   animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
-  background-color: white;
 }
 
 .reRenderPos{
@@ -1207,7 +1207,6 @@ p{
   animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
-  background-color: white;
 }
 
 .renderGif{
